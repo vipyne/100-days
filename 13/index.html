@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>webGLOL</title>
+</head>
+<body>
+  <canvas id="webgl-canvas"></canvas>
+  <script type="vertex" id="vs">
+    attribute vec4 pos;
+    attribute vec3 aColor;
+    varying vec3 vColor;
+    uniform float time;
+    uniform vec4 messingAround;
+
+    void main() {
+      mat4 rot = mat4(cos(time), -sin(time), 0, 0,
+                      sin(time), cos(time), 0, 0,
+                      0, 0, 1.0, 0,
+                      0, 0, 0,   1.0);
+
+      gl_Position = vec4(rot * pos);
+      vColor = aColor;
+      gl_PointSize = 50.0;
+    }
+  </script>
+  <script type="fragment" id="fs">
+    precision highp float;
+    varying vec3 vColor;
+    uniform float time;
+
+    #ifdef GL_OES_standard_derivatives
+    #extension GL_OES_standard_derivatives : enable
+    #endif
+
+    void main() {
+
+      mat4 rot = mat4(cos(-time), -sin(-time), 0, 0,
+                sin(-time), cos(-time), 0, 0,
+                0, 0, 1.0, 0,
+                0, 0, 0, 1.0);
+
+      float radius = 0.0;
+      vec2 cxy = 2.0 * gl_PointCoord - 1.0;
+      radius = dot(cxy, cxy);
+      if (radius > 1.0 && radius < 2.00) {
+        discard;
+      }
+      gl_FragColor = vec4(vColor.r, vColor.g, vColor.b, time) * rot;
+    }
+  </script>
+  <script>
+    var canvas = document.getElementById('webgl-canvas');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    var gl = canvas.getContext('webgl');
+
+    gl.clearColor(0, 0, 0, 0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+
+    var vsSource = document.getElementById('vs').text;
+    var vertexShader = gl.createShader(gl.VERTEX_SHADER);
+    gl.shaderSource(vertexShader, vsSource);
+    gl.compileShader(vertexShader);
+    if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+      console.error(gl.getShaderInfoLog(vertexShader));
+    }
+
+    var fsSource = document.getElementById('fs').text;
+    var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+    gl.shaderSource(fragmentShader, fsSource);
+    gl.compileShader(fragmentShader);
+    if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
+      console.error(gl.getShaderInfoLog(fragmentShader));
+    }
+
+    var program = gl.createProgram();
+    gl.attachShader(program, vertexShader);
+    gl.attachShader(program, fragmentShader);
+    gl.linkProgram(program);
+
+    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+      console.error(gl.getProgramInfoLog(program));
+    }
+
+    gl.useProgram(program);
+
+    var positions = new Float32Array([
+      -0.5, -0.5, 0.00,
+       0.5, -0.5, -0.500,
+       0.0,  0.5, 0.00
+    ]);
+
+    var pos = gl.getAttribLocation(program, 'pos');
+
+    var positionBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
+    gl.vertexAttribPointer(pos, 3, gl.FLOAT, false, 0, 0);
+    gl.enableVertexAttribArray(pos);
+
+    var colors = new Float32Array([
+      2.00, 0.00, 0.00,
+      0.00, 2.00, 0.0,
+      0.0, 0.00, 2.00
+    ]);
+
+    var aColor = gl.getAttribLocation(program, 'aColor');
+
+    var colorBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, colors, gl.STATIC_DRAW);
+    gl.vertexAttribPointer(aColor, 3, gl.FLOAT, false, 0, 0);
+    gl.enableVertexAttribArray(aColor);
+
+    var time = gl.getUniformLocation(program, 'time');
+    var messingAround = gl.getUniformLocation(program, 'messingAround');
+
+    var startTime = Date.now();
+    var mousePos;
+
+    document.addEventListener('mousemove', function(event) {
+      mousePos = event.clientX;
+      // mousePos = event.clientX/window.innerWidth;
+    });
+
+    requestAnimationFrame(function draw() {
+      var delta = ((Date.now() - startTime) / 1000) / 1;
+      // var delta = mousePos;
+
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      gl.drawArrays(gl.POINTS, 0, 3);
+
+      gl.uniform1f(time, delta);
+      gl.uniform4f(messingAround, 0.0, 0.0, 0.91910, 0.0);
+      requestAnimationFrame(draw);
+    });
+
+  </script>
+</body>
+</html>

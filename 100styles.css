@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-variant: small-caps;
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: rgba(172, 189, 21, 1);
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-size: 15px;
+  margin: 0 15px 0 -7px;
+  color: rgba(21, 189, 172, 1);;
+}
+
+ul {
+  display: inline-block;
+}
+
+.container {
+  width: 825px;
+  margin: 100px auto;
+}
+
+.is-disabled a {
+  opacity: 0.5;
+  cursor: default !important;
+}

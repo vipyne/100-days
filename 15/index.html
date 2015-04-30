@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gify</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+  	.container {
+  		vertical-align: top;
+  		display: inline-block;
+  		padding: 20px;
+  		background-color: aquamarine;
+  	}
+  	footer {
+  		display: block;
+  		width: 100%;
+  		/*position: absolute;*/
+ 			bottom: 0;
+  	}
+  </style>
+</head>
+<body>
+  <h1>GiFfY ~ wasm style</h1>
+  <div class="container">
+    <h2>Encode</h2>
+    <ol>
+    	<li>
+    		<h3>Write a secret message to hide in a gif</h3>
+        <form id="your-name">
+          <input autofocus id="input-name" type="text" style="width:500px" placeholder=" write secret message here ">
+        </form>
+      </li>
+      <li>
+    		<h3>Upload a gif</h3>
+    		<p>filesize limit: 3 mb</p>
+    		<input type="file" id="input-gif">
+      </li>
+      <li>
+    		<h3>Download gif with secret message</h3>
+        <p>The downloaded .gif looks the same, but now it holds your secret message.</p>
+      </li>
+    </ol>
+  </div>
+	<div class="container" style="background-color: turquoise;">
+    <h2>Decode</h2>
+    <ol>
+    	<li>
+    		<h3>Upload an encoded .gif</h3>
+    		<input type="file" id="decode-gif">
+      </li>
+      <li>
+    		<h3>Secret Message Decoded:</h3>
+        <p id="decoded" style="color:navy;font-family:monospace;"></p>
+      </li>
+    </ol>
+  </div>
+  <div class="container" style="background-color: slategrey;">
+  	<img src="./pizzaDog.gif" alt="pizza dog gif with a hidden message" width="224" height="224">
+  </div>
+  <footer>
+   <p>A WASM port of <a href="https://github.com/vipyne/giffy">this CLI program</a>. Thanks for trying it out! Made by <a href="https://github.com/vipyne">@vipyne</a>.</p>
+  </footer>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>

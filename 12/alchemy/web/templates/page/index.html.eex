@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h2><%= gettext "Hello %{name}", name: "World!" %></h2>
+  <p class="lead">this live updating thing is cool.</p>
+</div>
+
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>my sites</h4>
+    <ul>
+      <li>
+        <a href="https://twitter.com/vipyne">Twitter</a>
+      </li>
+      <li>
+        <a href="https://github.com/vipyne">Github</a>
+      </li>
+      <li>
+        <a href="http://vipyne.tumblr.com/">Tumblr</a>
+      </li>
+    </ul>
+  </div>
+
+</div>

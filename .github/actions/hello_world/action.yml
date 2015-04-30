@@ -1,0 +1,8 @@
+name: 'hello world'
+description: 'gh action test hello world'
+outputs:
+  time:
+    description: 'time of hello'
+runs:
+  using: 'node12'
+  main: 'test.js'

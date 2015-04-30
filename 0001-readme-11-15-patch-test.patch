@@ -1,0 +1,34 @@
+From 65a70bfe8039648e00b528f793cd4191816a8a8d Mon Sep 17 00:00:00 2001
+From: vipyne <vipyne@gmail.com>
+Date: Mon, 28 Sep 2020 20:25:53 -0400
+Subject: [PATCH] readme 11-15 patch test
+
+---
+ README.md | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 78b20c6..5e17f16 100644
+--- a/README.md
++++ b/README.md
+@@ -33,4 +33,15 @@
+ it's like that thing where you find a notebook with the first 10 pages filled and the remaining 90 pages blank.
+ 
+ ----------
+-change default branch name test
+\ No newline at end of file
++
++patch 🧸 test
++
++11. math 🌈
++
++12. elixir alchemy hello world
++
++13. something that can be drawn over
++
++14. a probably broken threejs thing
++
++15. gify wasm aka pizza dog
+-- 
+2.24.2 (Apple Git-127)
+

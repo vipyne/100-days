@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>baby geek</title>
+    <link rel='stylesheet' href='css/styles.css' />
+  </head>
+  <body id='all'>
+    <img id='cray' alt='baby geek' src='img/babygeek.jpg' />
+    <canvas id='canvas' width='600' height='436'></canvas>
+
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js'></script>
+    <script type='text/javascript' src='js/thatshtcray.js'></script>
+
+<script type="text/paperscript" canvas="canvas">
+
+  var raster = new Raster('cray');
+
+    // Move the raster to the center of the view
+    raster.position = view.center;
+
+    // Set the opacity of the raster to 10%, so we can see
+    // the colored paths on top more clearly:
+    raster.opacity = 0.5;
+
+    // The onMouseMove event is fired in increments of 25 pts:
+    tool.fixedDistance = 25;
+
+    // The size of our grid cells:
+    var gridSize = 12;
+
+    // Space the cells by 120%:
+    var spacing = 1.2;
+
+    raster.on('load', function() {
+      // Since the example image we're using is much too large,
+      // and therefore has way too many pixels, lets downsize it to
+      // 40 pixels wide and 30 pixels high:
+      raster.size = new Size(40, 30);
+
+      for (var y = 0; y < raster.height; y++) {
+        for(var x = 0; x < raster.width; x++) {
+          // Get the color of the pixel:
+          var color = raster.getPixel(x, y);
+
+          // Create a circle shaped path:
+          var path = new Path.Circle({
+            center: new Point(x, y) * gridSize,
+            radius: gridSize / 2 / spacing
+          });
+
+          // Set the fill color of the path to the color
+          // of the pixel:
+          path.fillColor = color;
+        }
+      }
+
+      // // Move the active layer to the center of the view, so all
+      // // the created paths in it appear centered.
+      // project.activeLayer.position = view.center;
+    });
+
+    // // Move the active layer to the center of the view:
+    // project.activeLayer.position = view.center;
+
+    // function onMouseMove(event) {
+    //   // Create a circle shaped path with its center point
+    //   // at the point in the middle between the current mouse
+    //   // position and the position when the last onMouseDrag
+    //   // event was fired:
+    //   var path = new Path.Circle({
+    //     center: event.middlePoint,
+    //     radius: 12.5,
+    //     strokeColor: 'white'
+    //   });
+var path = new Path.Circle({
+  center: [50, 50],
+  radius: 30,
+  strokeColor: 'white'
+});
+
+// function onMouseMove(event) {
+//   // Set the fill color of the path to the average color
+//   // of the raster at the position of the mouse:
+//   path.fillColor = raster.getAverageColor(event.point);
+// }
+
+  //     // Get the average color of the pixels that fall within
+  //     // the shape of the path:
+  //     path.fillColor = raster.getAverageColor(path);
+  //   }
+</script>
+  </body>
+</html>

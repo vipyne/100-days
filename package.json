@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-vip100days",
+  "version": "1.0.0",
+  "description": "Cool actions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipyne/100-days.git"
+  },
+  "license": "MIT",
+  "homepage": "http://vipyne.github.io/",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
