@@ -15,6 +15,6 @@ git()
   _(_\ \)__
  (____\___))"
   else
-      command git $@
+      command git "$@"
   fi;
 }
