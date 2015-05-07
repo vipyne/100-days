@@ -6,3 +6,6 @@
 2. spinning box
 -- noodling with THREE.js and some user interaction
 -- (webGL and addEventListener friendly only, sorry IE)
+
+3. monospace number sunset
+-- just starting to mess with d3
