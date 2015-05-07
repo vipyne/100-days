@@ -9,7 +9,7 @@
     var ul = document.createElement('ul'), holder = [];
     for (var j = 1*i; j <= 10*i; j++) {
       var li = [], HTML;
-      if (j <= 2) {
+      if (j <= 3) {
         HTML = '<li><a href="' + j + '/index.html">day <span>' + j + '</span></a></li>';
       } else {
         HTML = '<li class="is-disabled"><a href="#">day <span>' + j + '</span></a></li>';
