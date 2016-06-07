@@ -10,4 +10,8 @@
 3. monospace number sunset
 -- just starting to mess with d3
 
-4. hi ria
+4. baby geek
+-- incomplete
+
+5. tic tac toe
+-- html5 canvas API
