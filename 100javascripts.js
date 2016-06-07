@@ -3,20 +3,25 @@
 // generate html list
 
   var daysHTML = document.getElementById('js-days'),
-      docFrag  = document.createDocumentFragment();
+      docFrag  = document.createDocumentFragment(),
+      // update this number as sketches are showable... enough. ish.
+      numberOfDoneSketches = 5;
 
-  for (var i = 1; i <= 10; i++) {
-    var ul = document.createElement('ul'), holder = [];
-    for (var j = 1*i; j <= 10*i; j++) {
-      var li = [], HTML;
-      if (j <= 3) {
-        HTML = '<li><a href="' + j + '/index.html">day <span>' + j + '</span></a></li>';
+
+  for (var row = 1; row <= 10; row++) {
+    var ul     = document.createElement('ul'),
+        tempArray = [];
+    for (var column = 1 * row; column <= 10 * row; column++) {
+      var liArray = [],
+          markup;
+      if (column <= numberOfDoneSketches) {
+        markup  = '<li><a href="' + column + '/index.html">day <span>' + column + '</span></a></li>';
       } else {
-        HTML = '<li class="is-disabled"><a href="#">day <span>' + j + '</span></a></li>';
+        markup = '<li class="is-disabled"><a href="#">day <span>' + column + '</span></a></li>';
       }
-      holder.push(HTML);
-      li = holder.slice(-10);
-      ul.innerHTML = li.join('');
+      tempArray.push(markup);
+      liArray = tempArray.slice(-10);
+      ul.innerHTML = liArray.join('');
     }
     docFrag.appendChild(ul);
     ul = null;
