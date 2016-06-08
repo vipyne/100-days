@@ -14,4 +14,9 @@
 -- incomplete
 
 5. tic tac toe
--- html5 canvas API
+-- canvas API
+
+6. <under construction>
+
+7. colorsircles
+-- baby geek part 2
