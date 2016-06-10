@@ -18,62 +18,49 @@
   var imageData = imageContext.getImageData(0, 0, width, height);
   var rgbaByteArray = imageData.data;
 
-  var qwer = new Uint8ClampedArray;
-  var sillysort = rgbaByteArray.sort(function(a, b) {
-    return a - b
-  });
+  // var sillysort = rgbaByteArray.sort(function(a, b) {
+  //   return a - b
+  // });
 
+  // array to hold an array of the RGBA values
+  var twoDArr = [];
 
   var red = 0,
       green = 0,
       blue = 0;
-  for (var i = 0; i < rgbaByteArray.length/10000; i++) {
+  for (var i = 0; i < rgbaByteArray.length; i++) {
 
-    var index = i * 4;
-    // red
-      red += Math.floor(rgbaByteArray[index]/100);
-    // green
-      green += Math.floor(rgbaByteArray[index + 1]/100);
-    // blue
-      blue += Math.floor(rgbaByteArray[index + 2]/100);
+    var index = i;
 
-    console.log('poop')
-    console.log('red', red)
-    console.log('green', green)
-    console.log('blue', blue)
+    twoDArr[index] = [rgbaByteArray[index],
+                      rgbaByteArray[index+1],
+                      rgbaByteArray[index+2],
+                      rgbaByteArray[index+3]]
   }
 
-  var bigger = (red > green) ? red : green;
+  // array to hold raw RGBA values... essentially flatten twoDArr
+  var tempArr = [];
 
-  var biggest = (bigger > blue) ? bigger : blue;
+  // sort from largest red value to smallest
+  var sillysortpixels = twoDArr.sort(function(a, b) {
+    return (b[0] + b[1] + b[2]) - (a[0] + a[1] + a[2]);
+  });
 
-  console.log(biggest % height )
+  for (var j = 0; j < sillysortpixels.length; j++) {
+    if (sillysortpixels[j]) {
+      tempArr.push(sillysortpixels[j][0]);
+      tempArr.push(sillysortpixels[j][1]);
+      tempArr.push(sillysortpixels[j][2]);
+      tempArr.push(sillysortpixels[j][3]);
+    }
+  }
 
-  // canvasContext.beginPath();
-  // canvasContext.moveTo(0, 0);
-  // canvasContext.lineTo(0, height);
-  // canvasContext.strokeStyle = '#c0f';
-  // canvasContext.lineWidth = canvas.getAttribute('width') / 3 * 2;
-  // canvasContext.stroke();
-
-  // canvasContext.beginPath();
-  // canvasContext.moveTo(width/2, 0);
-  // canvasContext.lineTo(width/2, height-50);
-  // canvasContext.strokeStyle = '#2c005f';
-  // canvasContext.lineWidth = canvas.getAttribute('width') / 3;
-  // canvasContext.stroke();
-
-  // canvasContext.beginPath();
-  // canvasContext.moveTo(width/3*2.5, 0);
-  // canvasContext.lineTo(width/3*2.5, height-100);
-  // canvasContext.strokeStyle = '#0c3f5f';
-  // canvasContext.lineWidth = canvas.getAttribute('width') / 3;
-  // canvasContext.stroke();
+  var sillysort = new Uint8ClampedArray(tempArr.length);
+  sillysort.set(tempArr);
 
   var imgData = new ImageData(sillysort,300);
   canvasContext.putImageData(imgData, 0, 0)
 
-  console.log('height', height)
-  console.log('width', width)
+  console.log('EOF')
 
 })(window, document, undefined);
