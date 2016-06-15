@@ -58,7 +58,7 @@
   sillysort.set(tempArr);
 
   imgData = new ImageData(sillysort, width);
-  canvasContext.putImageData(imgData, 0, 0)
+  canvasContext.putImageData(imgData, 0, 0);
 
   console.log('benchmark', new Date().getTime() - benchmark);
 

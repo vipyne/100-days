@@ -1,6 +1,12 @@
-console.log('hey hey hey')
-self.addEventListener('message', function(e) {
-  console.log('Worker said: fart');
+self.addEventListener('message', function(event) {
+  var twoDArr = [], // hold RGBA value arrays
+      tempArr = [], // hold raw RGBA values... essentially flatten twoDArr
+      sillysortpixels,
+      sillysort,
+      imgData,
+      rgbaByteArray = event.data[0],
+      width = event.data[1];
+
   // create 2D array from RGBA byte array
   for (var i = 0; i < rgbaByteArray.length; i += 4) {
     var index = i;
@@ -33,6 +39,6 @@ self.addEventListener('message', function(e) {
   sillysort.set(tempArr);
 
   imgData = new ImageData(sillysort, width);
-  self.postMessage(e.data + 'hey boo boo');
+  self.postMessage(imgData);
 }, false);
 
