@@ -1,9 +1,9 @@
 ;(function(w, d, u) {
 
   var benchmark = new Date().getTime(),
-      orginalImage = document.getElementById('original-img'),
-      height = orginalImage.getAttribute('height'),
-      width = orginalImage.getAttribute('width'),
+      originalImage = document.getElementById('original-img'),
+      height = originalImage.getAttribute('height'),
+      width = originalImage.getAttribute('width'),
       imgCanvas = document.getElementById('img-canvas'),
       canvas = document.getElementById('draw-canvas'),
       imageData,
@@ -22,7 +22,7 @@
   canvasContext = canvas.getContext('2d');
   imageContext = imgCanvas.getContext('2d');
 
-  imageContext.drawImage(orginalImage, 0, 0)
+  imageContext.drawImage(originalImage, 0, 0)
   imageData = imageContext.getImageData(0, 0, width, height);
   rgbaByteArray = imageData.data;
 
@@ -34,7 +34,7 @@
                   rgbaByteArray[index + 2],
                   rgbaByteArray[index + 3]]
   }
-
+ console.log('a', rgbaByteArray[320])
   // sort from smallest to largest green value
   sillysortpixels = twoDArr.sort(function(a, b) {
     if (a[0] !== undefined && b[0] !== undefined) {
@@ -43,7 +43,7 @@
       return 0;
     }
   });
-
+  console.log('b', sillysortpixels[320])
   // create flat array of sorted RGBA values
   for (var j = 0; j < sillysortpixels.length; j++) {
     if (sillysortpixels[j] && sillysortpixels[j][0] !== undefined) {

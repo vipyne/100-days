@@ -1,9 +1,9 @@
 ;(function(w, d, u) {
 
   var benchmark = new Date().getTime(),
-      orginalImage = document.getElementById('original-img'),
-      height = orginalImage.getAttribute('height'),
-      width = orginalImage.getAttribute('width'),
+      originalImage = document.getElementById('original-img'),
+      height = originalImage.getAttribute('height'),
+      width = originalImage.getAttribute('width'),
       imgCanvas = document.getElementById('img-canvas'),
       canvas = document.getElementById('draw-canvas'),
       imageData,
@@ -14,7 +14,7 @@
   imgCanvas.setAttribute('height', height);
   imgCanvas.setAttribute('width', width);
   imageContext = imgCanvas.getContext('2d');
-  imageContext.drawImage(orginalImage, 0, 0)
+  imageContext.drawImage(originalImage, 0, 0)
   imageData = imageContext.getImageData(0, 0, width, height);
   rgbaByteArray = imageData.data;
 
