@@ -18,5 +18,11 @@
 
 6. <under construction>
 
-7. colorsircles
--- baby geek part 2
+7. all the pixels from dark to light
+-- me trying to understand canvas imagedata by rearranging pixels
+
+8. work it
+-- messing around with web workers
+
+9. pixels
+-- why am i obsessed with rearranging pixels
