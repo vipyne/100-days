@@ -40,6 +40,7 @@ web
 - web animation API
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API
 http://greensock.com/gsap
+http://www.pixijs.com/
 
 misc.
 ----
