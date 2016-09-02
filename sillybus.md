@@ -4,6 +4,8 @@ test 1 2 3
 
 heathers is on in the atrium
 
+its like stranger mr robot
+
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra

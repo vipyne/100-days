@@ -11,7 +11,7 @@
 
     echo "branch=$(git rev-parse --abbrev-ref HEAD)
 
-      if [ 'master' == '$branch' ]; then
+      if [ 'master' == '$(git rev-parse --abbrev-ref HEAD)' ]; then
         echo '***************************************'
         echo '*                                     *'
         echo '*  congrats on your push to master!   *'
