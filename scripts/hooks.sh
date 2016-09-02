@@ -1,9 +1,10 @@
 #!/bin/bash
 
 PRE_PUSH="./.git/hooks/pre-push"
-if [ -e "$PRE_PUSH" ]
+if [ ! -s "$PRE_PUSH" ]
 then
-echo '*** evaluated pre-push variable'
+echo '*** creating pre push git hook'
+echo '*** aka looky looky i got hooky'
 
 touch ./.git/hooks/pre-push
 chmod 777 ./.git/hooks/pre-push
