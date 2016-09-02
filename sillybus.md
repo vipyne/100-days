@@ -1,12 +1,3 @@
-this is just a test
-
-testing
-
-another test
-one more
-
-
-
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
