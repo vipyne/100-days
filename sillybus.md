@@ -1,5 +1,4 @@
-
-proposed `vanessa's RC syllabus`
+# things i want to learn at recurse center
 
 hardware
 -----
