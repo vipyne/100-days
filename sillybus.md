@@ -6,6 +6,10 @@ heathers is on in the atrium
 
 its like stranger mr robot
 
+what's your damage
+
+can we please jam now
+
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra

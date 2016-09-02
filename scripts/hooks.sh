@@ -9,9 +9,15 @@
     chmod 777 ./.git/hooks/pre-push
     echo '*** created file and changed permissions'
 
-    echo "branch=$(git rev-parse --abbrev-ref HEAD)
+    echo "BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-      if [ 'master' == '$(git rev-parse --abbrev-ref HEAD)' ]; then
+    echo '1'
+    echo '$(git rev-parse --abbrev-ref HEAD)'
+    echo '2'
+    echo $(git rev-parse --abbrev-ref HEAD)
+    echo '3'
+
+      if [ 'master' == '$BRANCH' ]; then
         echo '***************************************'
         echo '*                                     *'
         echo '*  congrats on your push to master!   *'
