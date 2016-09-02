@@ -1,6 +1,6 @@
 # things i want to learn at recurse center
 
-testing...
+testing... 1 2 3 
 
 hardware
 -----
