@@ -1,5 +1,7 @@
 # things i want to learn at recurse center
 
+test
+
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
