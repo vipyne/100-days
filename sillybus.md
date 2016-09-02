@@ -59,3 +59,5 @@ http://ian-albert.com/old/custom_filters/
 - misc.
 http://bradfieldcs.com/diy/
 https://en.wikipedia.org/wiki/Least_squares
+
+http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
