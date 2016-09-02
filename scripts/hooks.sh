@@ -1,17 +1,14 @@
 #!/bin/bash
 
-# PRE_PUSH="./.git/hooks/pre-push"
-# if [ -e "$PRE_PUSH" ]
-#     echo '*** evaluated pre-push variable'
-# then
+PRE_PUSH="./.git/hooks/pre-push"
+if [ -e "$PRE_PUSH" ]
+then
+echo '*** evaluated pre-push variable'
 
-    touch ./.git/hooks/pre-push
-    chmod 777 ./.git/hooks/pre-push
-    echo '*** created file and changed permissions'
+touch ./.git/hooks/pre-push
+chmod 777 ./.git/hooks/pre-push
 
-    echo "branch=$(git rev-parse --abbrev-ref HEAD)
-
-      if [ 'master' == '$(git rev-parse --abbrev-ref HEAD)' ]; then
+echo "if [ 'master' == \$(git rev-parse --abbrev-ref HEAD) ]; then
         echo '***************************************'
         echo '*                                     *'
         echo '*  congrats on your push to master!   *'
@@ -21,5 +18,4 @@
         echo '*                                     *'
         echo '***************************************'
       fi" > ./.git/hooks/pre-push 
-    echo '*** pretty sure this is writing the file everytime but eh at least maybe it will work'
-# fi
+fi
