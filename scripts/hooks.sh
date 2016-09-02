@@ -1,9 +1,9 @@
 #!/bin/bash
 
-PRE_PUSH="./.git/hooks/pre-push"
-if [ -e "$PRE_PUSH" ]
-    echo '*** evaluated pre-push variable'
-then
+# PRE_PUSH="./.git/hooks/pre-push"
+# if [ -e "$PRE_PUSH" ]
+#     echo '*** evaluated pre-push variable'
+# then
 
     touch ./.git/hooks/pre-push
     chmod 777 ./.git/hooks/pre-push
@@ -22,4 +22,4 @@ then
         echo '***************************************'
       fi" > ./.git/hooks/pre-push 
     echo '*** pretty sure this is writing the file everytime but eh at least maybe it will work'
-fi
+# fi
