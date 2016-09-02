@@ -2,6 +2,8 @@
 
 testing... 1 2 3 
 
+another test
+
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
