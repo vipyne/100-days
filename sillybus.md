@@ -1,8 +1,6 @@
 this is just a test
 
 
-proposed `vanessa's RC syllabus`
-
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
