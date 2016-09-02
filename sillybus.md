@@ -2,6 +2,8 @@
 
 test 1 2 3
 
+heathers is on in the atrium
+
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
