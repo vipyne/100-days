@@ -1,11 +1,5 @@
 # things i want to learn at recurse center
 
-test 1 2 3
-
-heathers is on in the atrium
-
-its like stranger mr robot
-
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
@@ -33,7 +27,8 @@ C
 https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n
 
 - AE / scripting
-https://github.com/Instrument/cyclops
+  - https://github.com/Instrument/cyclops
+  - https://github.com/bodymovin/bodymovin
 
 - javascript / llvm / compiler
 https://github.com/kripken/emscripten
@@ -50,9 +45,6 @@ web
 misc.
 ----
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
-
-- AE / scripting
-https://github.com/Instrument/cyclops
 
 - data pipelines
 http://www.gdcvault.com/play/1015336/Cutting-the-Pipe-Achieving-Sub
