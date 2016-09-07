@@ -47,7 +47,8 @@ misc.
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
 
 - data pipelines
-http://www.gdcvault.com/play/1015336/Cutting-the-Pipe-Achieving-Sub
+  - http://www.gdcvault.com/play/1015336/Cutting-the-Pipe-Achieving-Sub
+  - https://www.youtube.com/watch?v=rX0ItVEVjHc
 
 http://ian-albert.com/old/custom_filters/
   - Blurs
