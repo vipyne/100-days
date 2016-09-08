@@ -24,7 +24,10 @@ C
 - GLSL
 - OpenCV
 - C++
-https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n
+  - http://en.cppreference.com/w/
+  - http://web.archive.org/web/20140719082420/http://www.altdev.co/2011/11/09/a-low-level-curriculum-for-c-and-c/
+  - http://web.archive.org/web/20140719093756/http://www.altdev.co/author/alex-darby/
+  - https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n --STL
 
 - AE / scripting
   - https://github.com/Instrument/cyclops
@@ -44,6 +47,11 @@ web
 
 misc.
 ----
+
+video
+  - http://atomicparsley.sourceforge.net/ -- metadata
+  - http://datamoshing.com/
+  
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
 
 - data pipelines
@@ -53,6 +61,9 @@ http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
 http://ian-albert.com/old/custom_filters/
   - Blurs
   - Photoshop blend modes
+  
+lua!
+  - https://love2d.org/ -- 2d game engine
 
 - misc.
 http://bradfieldcs.com/diy/
