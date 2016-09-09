@@ -49,6 +49,9 @@ misc.
 ----
 
 video
+  - FFMPEG -- 
+    - https://github.com/mpenkov/ffmpeg-tutorial -- video editor tutorial
+    - ffplay.c
   - http://atomicparsley.sourceforge.net/ -- metadata
   - http://datamoshing.com/
   
