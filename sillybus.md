@@ -9,6 +9,7 @@ hardware
 - GPU architecture / CPU architecture / computer architecture
   - https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr
   - http://www-inst.eecs.berkeley.edu/~cs152/sp16/
+  - chrome://gpu/
 
   - https://en.wikipedia.org/wiki/Barrel_shifter
   - https://en.wikipedia.org/wiki/Circular_shift
