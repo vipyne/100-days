@@ -17,12 +17,12 @@ hardware
 math
 -----
 - linear algebra
+  - http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools/
+  - - http://mathworld.wolfram.com/Matrix.html
   - Convex Triangulation
   - Non-convex Triangulation 
   - Matrices and Vectors
   - Curves
-  - Shape expansion
-- http://mathworld.wolfram.com/Matrix.html
 
 C
 -----
