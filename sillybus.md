@@ -4,6 +4,7 @@ hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
   - http://www.nand2tetris.org/course.php
+  - https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax
 
 - GPU architecture / CPU architecture / computer architecture
   - https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr
