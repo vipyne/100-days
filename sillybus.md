@@ -3,11 +3,14 @@
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
-http://www.nand2tetris.org/course.php
+  - http://www.nand2tetris.org/course.php
 
 - GPU architecture / CPU architecture / computer architecture
-https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr
-http://www-inst.eecs.berkeley.edu/~cs152/sp16/
+  - https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr
+  - http://www-inst.eecs.berkeley.edu/~cs152/sp16/
+
+  - https://en.wikipedia.org/wiki/Barrel_shifter
+  - https://en.wikipedia.org/wiki/Circular_shift
 
 math
 -----
@@ -17,6 +20,7 @@ math
   - Matrices and Vectors
   - Curves
   - Shape expansion
+- http://mathworld.wolfram.com/Matrix.html
 
 C
 -----
@@ -45,16 +49,17 @@ web
   - http://greensock.com/gsap
   - http://www.pixijs.com/
 
-misc.
-----
-
 video
+----
   - FFMPEG -- 
     - https://github.com/mpenkov/ffmpeg-tutorial -- video editor tutorial
     - ffplay.c
   - http://atomicparsley.sourceforge.net/ -- metadata
   - http://datamoshing.com/
-  
+  - https://www.theora.org/faq/
+
+misc.
+----
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
 
 - data pipelines
@@ -69,7 +74,11 @@ lua!
   - https://love2d.org/ -- 2d game engine
 
 - misc.
-http://bradfieldcs.com/diy/
-https://en.wikipedia.org/wiki/Least_squares
+  - http://bradfieldcs.com/diy/
+  - https://en.wikipedia.org/wiki/Least_squares
 
-http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+reading list
+- http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
+- https://codewords.recurse.com/issues/two/how-i-learned-to-stop-worrying-and-love-http
+- https://codewords.recurse.com/issues/six/image-processing-101
+- 
