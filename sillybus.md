@@ -62,6 +62,8 @@ video
 
 misc.
 ----
+https://www.coursera.org/learn/introduction-to-algorithms
+
 http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
 
 - data pipelines
