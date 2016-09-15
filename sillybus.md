@@ -78,6 +78,7 @@ lua!
 - misc.
   - http://bradfieldcs.com/diy/
   - https://en.wikipedia.org/wiki/Least_squares
+  - http://www.fmwconcepts.com/imagemagick/filmgrain/index.php
 
 readings
 - http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
