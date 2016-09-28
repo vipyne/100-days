@@ -26,3 +26,6 @@
 
 9. terminal tic tac toe
 -- under construction
+
+10. sublime snippet
+-- console log all the things

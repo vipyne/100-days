@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sublime snippet - console.log</title>
+    <link rel='stylesheet' href='css/styles.css' />
+  </head>
+  <body id='all'>
+    <pre>**********   steps for putting a sublime snippet for typing console.log   **********
+
+1. add </br>
+<span style="color:purple">{ "keys": ["ctrl+super+c"], "command": "insert_snippet", "args": { "name": "Packages/Colorsublime-Themes/console-log-all-the-things.sublime-snippet" } }</span> </br>
+to <span style="color:green">Sublime > Preferences > Key Bindings - User</span>
+</br>
+2.
+<span style="color:purple">&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[console.log(&apos;${1:Placeholder}&apos;, ${1:Placeholder});]]&gt;&lt;/content&gt;
+    &lt;!-- Optional: Scope the tab trigger will be active in --&gt;
+    &lt;scope&gt;source.javascript&lt;/scope&gt;
+    &lt;!-- Optional: Description to show in the menu --&gt;
+    &lt;description&gt;console.log(&apos;allTheThings&apos;, allTheThings);&lt;/description&gt;
+&lt;/snippet&gt;</span> </br>
+in a file called "console-log-all-the-things.sublime-snippet"
+</br>
+3. put "console-log-all-the-things.sublime-snippet" in <span style="color:green">Sublime > Preferences > Browse Packages&hellip; > Colorsublime-Themes</span>
+</pre>
+  </body>
+</html>
