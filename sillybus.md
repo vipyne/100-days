@@ -30,10 +30,12 @@ C
 - GLSL
 - OpenCV
 - C++
-  - http://en.cppreference.com/w/
-  - http://web.archive.org/web/20140719082420/http://www.altdev.co/2011/11/09/a-low-level-curriculum-for-c-and-c/
-  - http://web.archive.org/web/20140719093756/http://www.altdev.co/author/alex-darby/
-  - https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n --STL
+  - [C++ reference](http://en.cppreference.com/w/)
+  - [low level c: part 1](http://web.archive.org/web/20140719082420/http://www.altdev.co/2011/11/09/a-low-level-curriculum-for-c-and-c/)
+  - [low level c: part 2](http://web.archive.org/web/20140719093756/http://www.altdev.co/author/alex-darby/)
+  - [stephan t lavavej on STL](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n)
+- GLSL
+  - [book of shaders](https://thebookofshaders.com/)
 
 - AE / scripting
   - https://github.com/Instrument/cyclops
@@ -75,7 +77,7 @@ http://ian-albert.com/old/custom_filters/
   - Photoshop blend modes
   
 lua!
-  - https://love2d.org/ -- 2d game engine
+  - [love](https://love2d.org/) -- 2d game engine
 
 - misc.
   - http://bradfieldcs.com/diy/
