@@ -88,4 +88,9 @@ readings
 - https://codewords.recurse.com/issues/six/image-processing-101
 - https://developers.500px.com/image-classification-with-hadoop-streaming-1aa18b81e22b#.ptzr8qfuu
 
+someday
+----
+machine learning
+- https://www.tensorflow.org/
+
 ps. the name of this file is intentionally wrong.  i am just silly :P
