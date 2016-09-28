@@ -16,7 +16,7 @@
 5. tic tac toe
 -- canvas API
 
-6. <under construction>
+6. <under construction> / abandoned web scraping sketch
 
 7. all the pixels from dark to light
 -- me trying to understand canvas imagedata by rearranging pixels
