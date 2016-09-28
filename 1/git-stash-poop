@@ -4,7 +4,7 @@
 
 git()
 {
-  if [ "$1" = "stash" -a "$2" = "poop" ]
+  if [ "$1" == "stash" -a "$2" == "poop" ]
   then
       command git stash pop
       echo "
