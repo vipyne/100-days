@@ -3,11 +3,11 @@
 hardware
 -----
 - Instruction Set Architecture (ISA) / circuits / binary algebra
-  - http://www.nand2tetris.org/course.php
-  - https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax
+  - [NAND 2 TETRIS](http://www.nand2tetris.org/course.php)
+  - [x86 assembly](https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax)
 
 - GPU architecture / CPU architecture / computer architecture
-  - https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr
+  - [computer architecture and engineering ](https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr)(youtube playlist of lectures)
   - http://www-inst.eecs.berkeley.edu/~cs152/sp16/
   - chrome://gpu/
 
@@ -92,5 +92,6 @@ someday
 ----
 machine learning
 - https://www.tensorflow.org/
+- [A Neural Algorithm of Artistic Style](http://arxiv.org/pdf/1508.06576v2.pdf)
 
 ps. the name of this file is intentionally wrong.  i am just silly :P
