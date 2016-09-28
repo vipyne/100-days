@@ -18,7 +18,8 @@ math
 -----
 - linear algebra
   - http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools/
-  - - http://mathworld.wolfram.com/Matrix.html
+    - [vid on matrix math](https://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html)
+    - http://mathworld.wolfram.com/Matrix.html
   - Convex Triangulation
   - Non-convex Triangulation 
   - Matrices and Vectors
