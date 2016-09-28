@@ -6,6 +6,7 @@
       width = originalImage.getAttribute('width'),
       imgCanvas = document.getElementById('img-canvas'),
       canvas = document.getElementById('draw-canvas'),
+      canvas2 = document.getElementById('draw-2-canvas'),
       imageData,
       rgbaByteArray,
       imgData,
@@ -21,14 +22,20 @@
   worker.postMessage([rgbaByteArray, width]);
 
   canvasContext = canvas.getContext('2d');
+  canvas2Context = canvas2.getContext('2d');
 
   worker.addEventListener('message', function(event) {
-    imgData = event.data;
+    imgData = event.data.first;
+    imgData2 = event.data.second;
+    console.log('event.data.derpy', event.data.derpy);
     canvasContext.putImageData(imgData, 0, 0);
+    canvas2Context.putImageData(imgData2, 0, 0);
     console.log('benchmark', new Date().getTime() - benchmark);
   }, false);
 
   canvas.setAttribute('height', height);
   canvas.setAttribute('width', width);
+  canvas2.setAttribute('height', height);
+  canvas2.setAttribute('width', width);
 
 })(window, document, undefined);
