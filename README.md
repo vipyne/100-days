@@ -24,5 +24,5 @@
 8. work it
 -- messing around with web workers
 
-9. pixels
--- why am i obsessed with rearranging pixels
+9. terminal tic tac toe
+-- under construction
