@@ -1,5 +1,5 @@
 ;(function(w, d, u) {
 
-  console.log('post-receive test 4');
+  // 'tic-tac-toe-file'
 
 })(window, document, undefined);
