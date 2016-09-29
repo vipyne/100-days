@@ -95,6 +95,7 @@ someday
 ----
 machine learning
 - https://www.tensorflow.org/
+  - [a ruby gem](https://medium.com/@Arafat./introducing-tensorflow-ruby-api-e77a477ff16e#.ekhsx9v58)
 - [A Neural Algorithm of Artistic Style](http://arxiv.org/pdf/1508.06576v2.pdf)
 
 ps. the name of this file is intentionally wrong.  i am just silly :P
