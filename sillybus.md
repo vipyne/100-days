@@ -8,7 +8,7 @@ hardware
 
 - GPU architecture / CPU architecture / computer architecture
   - [computer architecture and engineering ](https://www.youtube.com/playlist?list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr)(youtube playlist of lectures)
-  - http://www-inst.eecs.berkeley.edu/~cs152/sp16/
+  - [computer architecture berkeley course](http://www-inst.eecs.berkeley.edu/~cs152/sp16/)
   - chrome://gpu/
 
   - https://en.wikipedia.org/wiki/Barrel_shifter
@@ -16,8 +16,8 @@ hardware
 
 math
 -----
-- linear algebra
-  - http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools/
+- linear algebra - kahn academy
+  - [mit course vid matrix math](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/tools/)
     - [vid on matrix math](https://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html)
     - http://mathworld.wolfram.com/Matrix.html
   - Convex Triangulation
@@ -39,35 +39,34 @@ C
   - [book of shaders](https://thebookofshaders.com/)
 
 - AE / scripting
-  - https://github.com/Instrument/cyclops
-  - https://github.com/bodymovin/bodymovin
+  - [cyclops](https://github.com/Instrument/cyclops)
+  - [bodymovin](https://github.com/bodymovin/bodymovin)
 
-- javascript / llvm / compiler
-https://github.com/kripken/emscripten
+- [emscripten](https://github.com/kripken/emscripten) - javascript llvm compiler
 
 web
 ----
 - WebGL
 - Canvas API
-- web animation API
-  - https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API
-  - http://greensock.com/gsap
-  - http://www.pixijs.com/
+- [web animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)
+  - [greensock](http://greensock.com/gsap)
+  - [pixijs](http://www.pixijs.com/)
+- [adtile motionStack](https://motionstack.adtile.me/)
 
 video
 ----
   - FFMPEG -- 
-    - https://github.com/mpenkov/ffmpeg-tutorial -- video editor tutorial
+    - [video editor tutorial](https://github.com/mpenkov/ffmpeg-tutorial)
     - ffplay.c
-  - http://atomicparsley.sourceforge.net/ -- metadata
-  - http://datamoshing.com/
-  - https://www.theora.org/faq/
+  - [atomicparsley](http://atomicparsley.sourceforge.net/) -- metadata
+  - [datamoshing](http://datamoshing.com/)
+  - [theora](https://www.theora.org/faq/)
 
 misc.
 ----
-https://www.coursera.org/learn/introduction-to-algorithms
+[asciinema](https://asciinema.org/)
 
-http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS
+[VIPS](http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS)
 
 - data pipelines
   - http://www.gdcvault.com/play/1015336/Cutting-the-Pipe-Achieving-Sub
@@ -83,7 +82,7 @@ lua!
 - misc.
   - http://bradfieldcs.com/diy/
   - https://en.wikipedia.org/wiki/Least_squares
-  - http://www.fmwconcepts.com/imagemagick/filmgrain/index.php
+  - [imagemagick filmgrain](http://www.fmwconcepts.com/imagemagick/filmgrain/index.php)
 
 readings
 - http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/
@@ -93,6 +92,8 @@ readings
 
 someday
 ----
+[coursera algorithms](https://www.coursera.org/learn/introduction-to-algorithms)
+
 machine learning
 - https://www.tensorflow.org/
   - [a ruby gem](https://medium.com/@Arafat./introducing-tensorflow-ruby-api-e77a477ff16e#.ekhsx9v58)
