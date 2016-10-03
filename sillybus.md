@@ -53,6 +53,11 @@ web
   - [pixijs](http://www.pixijs.com/)
 - [adtile motionStack](https://motionstack.adtile.me/)
 
+vr
+----
+- [vizor](https://github.com/vizorvr/vizor)
+- [a-frame](https://aframe.io/)
+
 video
 ----
   - FFMPEG -- 
