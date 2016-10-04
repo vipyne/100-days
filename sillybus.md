@@ -24,6 +24,7 @@ math
   - Non-convex Triangulation 
   - Matrices and Vectors
   - Curves
+- [inigo quilez](http://www.iquilezles.org/www/index.htm)
 
 C
 -----
