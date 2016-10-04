@@ -52,6 +52,7 @@ web
   - [greensock](http://greensock.com/gsap)
   - [pixijs](http://www.pixijs.com/)
 - [adtile motionStack](https://motionstack.adtile.me/)
+- [mapbox gl](https://www.mapbox.com/mapbox-gl-js/api/)
 
 vr
 ----
