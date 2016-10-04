@@ -26,6 +26,10 @@ math
   - Curves
 - [inigo quilez](http://www.iquilezles.org/www/index.htm)
 
+/where i currently am in C land/
+- [learncpp](http://www.learncpp.com/cpp-tutorial/1-10b-how-to-design-your-first-programs/)
+- [stephen T. L. core video](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Core-C-/Stephan-T-Lavavej-Core-C-1-of-n)
+
 C
 -----
 - OpenGL
@@ -99,6 +103,8 @@ readings
 
 someday
 ----
+[tmux](https://tmux.github.io/)
+
 [coursera algorithms](https://www.coursera.org/learn/introduction-to-algorithms)
 
 machine learning
