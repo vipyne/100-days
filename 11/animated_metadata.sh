@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this script "animates" color metatags in mac OSX finder windows
-# usage: $ ./animate_the_rainbow.sh [path to file on which to animate colors] [number of animation loops]
+# usage: $ ./animated_metadata.sh [path to file on which to animate colors] [number of animation loops]
 
 # TODO / "FEATURES":
 # - automatically open and set appropriate Finder window in focus
@@ -106,11 +106,11 @@ outro_finder=($Gy_P_B_finder
 if [ -f "$1" ]; then
  file_to_animate="$1";
 else
-  file_to_animate="$0"
+  file_to_animate="$0";
 fi
 
 # if number of loops argument is invalid, default to two loops
-number_regex='^[0-9]+$'
+number_regex='^[0-9]+$';
 if [[ "$2" =~ $number_regex ]]; then
   loops="$2";
 else
