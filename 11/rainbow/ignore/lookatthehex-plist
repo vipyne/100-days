@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_kMDItemOwnerUserID</key>
+	<integer>501</integer>
+	<key>kMDItemContentCreationDate</key>
+	<date>2016-10-04T14:00:07Z</date>
+	<key>kMDItemContentModificationDate</key>
+	<date>2016-10-04T14:03:13Z</date>
+	<key>kMDItemContentType</key>
+	<string>public.plain-text</string>
+	<key>kMDItemContentTypeTree</key>
+	<array>
+		<string>public.plain-text</string>
+		<string>public.text</string>
+		<string>public.data</string>
+		<string>public.item</string>
+		<string>public.content</string>
+	</array>
+	<key>kMDItemDateAdded</key>
+	<date>2016-10-04T19:35:40Z</date>
+	<key>kMDItemDisplayName</key>
+	<string>lookatthehex.txt</string>
+	<key>kMDItemFSContentChangeDate</key>
+	<date>2016-10-04T14:03:13Z</date>
+	<key>kMDItemFSCreationDate</key>
+	<date>2016-10-04T14:00:07Z</date>
+	<key>kMDItemFSCreatorCode</key>
+	<integer>0</integer>
+	<key>kMDItemFSFinderFlags</key>
+	<integer>2</integer>
+	<key>kMDItemFSInvisible</key>
+	<false/>
+	<key>kMDItemFSIsExtensionHidden</key>
+	<false/>
+	<key>kMDItemFSLabel</key>
+	<integer>1</integer>
+	<key>kMDItemFSName</key>
+	<string>lookatthehex.txt</string>
+	<key>kMDItemFSOwnerGroupID</key>
+	<integer>20</integer>
+	<key>kMDItemFSOwnerUserID</key>
+	<integer>501</integer>
+	<key>kMDItemFSSize</key>
+	<integer>85</integer>
+	<key>kMDItemFSTypeCode</key>
+	<integer>0</integer>
+	<key>kMDItemKind</key>
+	<string>Plain Text Document</string>
+	<key>kMDItemLastUsedDate</key>
+	<date>2016-10-04T14:03:07Z</date>
+	<key>kMDItemLogicalSize</key>
+	<integer>85</integer>
+	<key>kMDItemPhysicalSize</key>
+	<integer>4096</integer>
+	<key>kMDItemUseCount</key>
+	<integer>1</integer>
+	<key>kMDItemUsedDates</key>
+	<array>
+		<date>2016-10-04T04:00:00Z</date>
+	</array>
+	<key>kMDItemUserTags</key>
+	<array>
+		<string>Green</string>
+		<string>Orange</string>
+		<string>Yellow</string>
+		<string>Red</string>
+		<string>Purple</string>
+		<string>Blue</string>
+		<string>Gray</string>
+	</array>
+	<key>kMDLabel_yekauorssrbpta3hdteqgbglma</key>
+	<date>0000-12-30T00:00:00Z</date>
+</dict>
+</plist>
