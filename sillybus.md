@@ -13,6 +13,10 @@ hardware
 
   - https://en.wikipedia.org/wiki/Barrel_shifter
   - https://en.wikipedia.org/wiki/Circular_shift
+  
+- memory
+  - [memory faq](http://nommu.org/memory-faq.txt)
+  - [what every programmer should know about memory](http://lwn.net/Articles/250967/)
 
 math
 -----
@@ -29,6 +33,19 @@ math
 /where i currently am in C land/
 - [learncpp](http://www.learncpp.com/cpp-tutorial/1-10b-how-to-design-your-first-programs/)
 - [stephen T. L. core video](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Core-C-/Stephan-T-Lavavej-Core-C-1-of-n)
+- [hey, a recurse post](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
+
+- [disassmbly](http://www.expobrain.net/2013/06/16/disassembly-c-code-for-fun-part-1/)
+
+assembly
+----
+- [helpful intro reference](https://www3.nd.edu/~dthain/courses/cse40243/fall2015/intel-intro.html)
+- [smash the stack](http://insecure.org/stf/smashstack.html)
+- [heavily commented example](http://www.jacobmartin.org/code/asm.html)
+- ["easy"](http://ian.seyler.me/easy_x86-64/)
+- [another assembly post](http://nickdesaulniers.github.io/blog/2014/04/18/lets-write-some-x86-64/)
+
+- [life of a c program](https://docs.google.com/presentation/d/1IwSxhDd2jxIC_vKWHzEcZLrwnuPp_Jzo2SzGMAF0sok/edit#slide=id.g17993633fa_0_32)
 
 C
 -----
@@ -69,6 +86,7 @@ video
   - FFMPEG -- 
     - [video editor tutorial](https://github.com/mpenkov/ffmpeg-tutorial)
     - ffplay.c
+  - [video streamer blog post](https://bengarney.com/2016/06/25/video-conference-part-1-these-things-suck/)
   - [atomicparsley](http://atomicparsley.sourceforge.net/) -- metadata
   - [datamoshing](http://datamoshing.com/)
   - [theora](https://www.theora.org/faq/)
@@ -76,6 +94,8 @@ video
 misc.
 ----
 [asciinema](https://asciinema.org/)
+
+[a targa thing](http://dmr.ath.cx/gfx/targa/)
 
 [VIPS](http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS)
 
@@ -111,5 +131,16 @@ machine learning
 - https://www.tensorflow.org/
   - [a ruby gem](https://medium.com/@Arafat./introducing-tensorflow-ruby-api-e77a477ff16e#.ekhsx9v58)
 - [A Neural Algorithm of Artistic Style](http://arxiv.org/pdf/1508.06576v2.pdf)
+
+- the kernal
+- [the "differences" between CPU and GPU](https://docs.google.com/spreadsheets/d/1vgaoYFF-QBOjjqN2SiqcUAhnhXCAjgBQzbovcbqdMso/edit#gid=0)
+- property lists [plist](file://localhost/System/Library/DTDs/PropertyList.dtd)
+- registers
+- fork() and exec() and threads and contexts and processes
+- read [unix network programming](https://www.amazon.com/gp/offer-listing/0139498761/ref=rdr_ext_uan)
+- [CUDA](https://developer.nvidia.com/cuda-zone) 
+- [OpenCL](https://software.intel.com/en-us/intel-opencl?cid=sem43700008885837829&intel_term=openCL&gclid=Cj0KEQjw4fy_BRCX7b6rq_WZgI0BEiQAl78nd04dFUvE1ODsrRKzDpCUoaloeojx0VDbY1IC0iimgikaAh7k8P8HAQ&gclsrc=aw.ds)
+
+- [imgui](https://github.com/ocornut/imgui)
 
 ps. the name of this file is intentionally wrong.  i am just silly :P
