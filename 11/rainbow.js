@@ -32,9 +32,10 @@ function init () {
 
   for (var x = 0; x < 360; x++) {
     //  M A T H   F T W
-    var red    = Math.floor(Math.abs(Math.sin(x + Math.PI / 2)) * 255);
-    var green  = Math.floor(Math.abs(Math.sin(x + Math.PI / 2 + 1)) * 255);
-    var blue   = Math.floor(Math.abs(Math.sin(x + Math.PI / 2 + 2)) * 255);
+    + Math.PI / 2
+    var red    = Math.floor(Math.abs(Math.sin(x)) * 255);
+    var green  = Math.floor(Math.abs(Math.sin(x + 1)) * 255);
+    var blue   = Math.floor(Math.abs(Math.sin(x + 2)) * 255);
     var hexNum = "#";
     hexNum += hex(red);
     hexNum += hex(green);
