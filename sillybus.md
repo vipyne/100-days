@@ -13,10 +13,15 @@ hardware
 
   - https://en.wikipedia.org/wiki/Barrel_shifter
   - https://en.wikipedia.org/wiki/Circular_shift
+  - [CGA](http://www.seasip.info/VintagePC/cga.html#ccomp)
   
 - memory
   - [memory faq](http://nommu.org/memory-faq.txt)
   - [what every programmer should know about memory](http://lwn.net/Articles/250967/)
+  
+- chips
+  - [propeller](https://www.parallax.com/catalog/microcontrollers/propeller)
+  - [andrew reitano](http://www.andrewreitano.com/2915643-tv-transmitter-business-card)
 
 math
 -----
@@ -35,6 +40,10 @@ math
 - [stephen T. L. core video](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Core-C-/Stephan-T-Lavavej-Core-C-1-of-n)
 - [hey, a recurse post](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
 
+- [virtual memory / c](http://www.cprogramming.com/tutorial/virtual_memory_and_heaps.html)
+
+- [learn opengl](http://www.learnopengl.com/#!Getting-started/Hello-Window)
+
 - [disassmbly](http://www.expobrain.net/2013/06/16/disassembly-c-code-for-fun-part-1/)
 
 assembly
@@ -44,12 +53,15 @@ assembly
 - [heavily commented example](http://www.jacobmartin.org/code/asm.html)
 - ["easy"](http://ian.seyler.me/easy_x86-64/)
 - [another assembly post](http://nickdesaulniers.github.io/blog/2014/04/18/lets-write-some-x86-64/)
+- [x86-64 Machine-Level Programming∗](https://www.cs.cmu.edu/~fp/courses/15213-s07/misc/asm64-handout.pdf)
 
 - [life of a c program](https://docs.google.com/presentation/d/1IwSxhDd2jxIC_vKWHzEcZLrwnuPp_Jzo2SzGMAF0sok/edit#slide=id.g17993633fa_0_32)
 
 C
 -----
 - OpenGL
+  - [glm](http://glm.g-truc.net/0.9.8/index.html)
+  - [matrix math](http://www.songho.ca/opengl/gl_matrix.html)
 - GLSL
 - OpenCV
 - C++
@@ -59,6 +71,7 @@ C
   - [stephan t lavavej on STL](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n)
 - GLSL
   - [book of shaders](https://thebookofshaders.com/)
+  - [avoid trig](http://www.iquilezles.org/www/articles/noacos/noacos.htm)
 
 - AE / scripting
   - [cyclops](https://github.com/Instrument/cyclops)
@@ -69,6 +82,7 @@ C
 web
 ----
 - WebGL
+  - [Radi](http://lacquer.fi/radidoc/Radi_and_WebGL) - realtime visual effects for Canvas and Video elements
 - Canvas API
 - [web animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)
   - [greensock](http://greensock.com/gsap)
@@ -142,5 +156,23 @@ machine learning
 - [OpenCL](https://software.intel.com/en-us/intel-opencl?cid=sem43700008885837829&intel_term=openCL&gclid=Cj0KEQjw4fy_BRCX7b6rq_WZgI0BEiQAl78nd04dFUvE1ODsrRKzDpCUoaloeojx0VDbY1IC0iimgikaAh7k8P8HAQ&gclsrc=aw.ds)
 
 - [imgui](https://github.com/ocornut/imgui)
+
+- 3D
+  [COLLADA](https://en.wikipedia.org/wiki/COLLADA)
+
+- color spaces
+  -[YCbCr](https://en.wikipedia.org/wiki/YCbCr)
+  -[CIE 1931 color space](https://en.wikipedia.org/wiki/CIE_1931_color_space)
+  
+  - [color math](http://www.colorcube.com/articles/math/math.htm)
+  - [color vision](https://terpconnect.umd.edu/~toh/ColorLesson/)
+  - [matrix math color](http://blog.press.princeton.edu/2015/09/14/nicholas-higham-on-mathematics-in-color/)
+
+- Gameboy
+  - [little dj](http://www.littlesounddj.com/lsd/)
+  - [nanoloop](http://www.nanoloop.de/one/index.html)
+  - [nullsleep](http://www.nullsleep.com/utilities.php)
+  
+- [bit-banging](https://en.wikipedia.org/wiki/Bit_banging)
 
 ps. the name of this file is intentionally wrong.  i am just silly :P
