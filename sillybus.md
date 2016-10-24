@@ -69,6 +69,7 @@ C
   - [low level c: part 1](http://web.archive.org/web/20140719082420/http://www.altdev.co/2011/11/09/a-low-level-curriculum-for-c-and-c/)
   - [low level c: part 2](http://web.archive.org/web/20140719093756/http://www.altdev.co/author/alex-darby/)
   - [stephan t lavavej on STL](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-/C9-Lectures-Stephan-T-Lavavej-Standard-Template-Library-STL-2-of-n)
+  - [C test unit](https://github.com/kr/ct)
 - GLSL
   - [book of shaders](https://thebookofshaders.com/)
   - [avoid trig](http://www.iquilezles.org/www/articles/noacos/noacos.htm)
