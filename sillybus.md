@@ -138,7 +138,20 @@ readings
 
 someday
 ----
-[tmux](https://tmux.github.io/)
+[WebMonkeys](https://github.com/MaiaVictor/WebMonkeys) - js control gpu
+[gpu | cpu js example](http://sethsamuel.github.io/talks/2016-08-25-jsconficeland/public/index.html#/27/0)
+
+[rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table)
+
+[disassembly](https://github.com/jart/disaster) - emacs
+
+[PRISM break](https://prism-break.org/en/)
+
+[NAT traversing](https://en.wikipedia.org/wiki/NAT_traversal)
+
+[dorks](https://github.com/techgaun/github-dorks)
+
+[vi key commands in sublime](https://www.sublimetext.com/docs/2/vintage.html) - vintage mode
 
 [coursera algorithms](https://www.coursera.org/learn/introduction-to-algorithms)
 
