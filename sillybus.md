@@ -48,6 +48,10 @@ math
 
 assembly
 ----
+- [web assembly](http://webassembly.org/docs/text-format/)
+- [asm.js](http://asmjs.org/spec/latest/)
+- [png decoding](https://github.com/lvandeve/lodepng)
+
 - [helpful intro reference](https://www3.nd.edu/~dthain/courses/cse40243/fall2015/intel-intro.html)
 - [smash the stack](http://insecure.org/stf/smashstack.html)
 - [heavily commented example](http://www.jacobmartin.org/code/asm.html)
