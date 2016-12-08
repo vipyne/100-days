@@ -112,6 +112,11 @@ video
 
 misc.
 ----
+
+[cinder](https://libcinder.org/)
+
+[openframeworks](http://openframeworks.cc/)
+
 [asciinema](https://asciinema.org/)
 
 [a targa thing](http://dmr.ath.cx/gfx/targa/)
@@ -128,6 +133,8 @@ http://ian-albert.com/old/custom_filters/
   
 lua!
   - [love](https://love2d.org/) -- 2d game engine
+  
+[nw.js](https://nwjs.io/)
 
 - misc.
   - http://bradfieldcs.com/diy/
