@@ -1,4 +1,5 @@
-# things i want to learn at recurse center
+# things i want to learn
+#### formally known as `things i want to learn at recurse center`
 
 hardware
 -----
@@ -200,5 +201,9 @@ machine learning
   - [nullsleep](http://www.nullsleep.com/utilities.php)
   
 - [bit-banging](https://en.wikipedia.org/wiki/Bit_banging)
+
+duh
+- elixir/phoenix
+- react native
 
 ps. the name of this file is intentionally wrong.  i am just silly :P
