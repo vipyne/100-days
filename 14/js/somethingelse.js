@@ -4,8 +4,9 @@
   this.mouse = [100,100];
   this.theta = 0.0;
   // MOUSE LOCATION
+  var _this = this;
   window.addEventListener('mousemove', function(event) {
-    this.mouse = [event.clientX, event.clientY];
+    _this.mouse = [event.clientX, event.clientY];
     // console.log('this.mouse', this.mouse);
     // console.log('this.theta', this.theta);
     this.theta += 0.1;
@@ -23,7 +24,11 @@
 
   var scene = new THREE.Scene();
 
-  var material = new THREE.LineBasicMaterial({ color: 0x3467ff});
+  var material = new THREE.LineBasicMaterial({ color: 0x3497aa,
+                                               linewidth: 9,
+                                               linecap: 'round', //ignored by WebGLRenderer
+                                               linejoin:  'round' //ignored by WebGLRenderer
+                                            });
 
   var geometry = new THREE.Geometry();
   geometry.vertices.push(new THREE.Vector3(-50, -50, -50)); // X
@@ -49,19 +54,34 @@
 
 
   function animate() {
-    var x = this.mouse[0];
-    var y = this.mouse[1];
+    var x = _this.mouse[0];
+    var y = _this.mouse[1];
 
     var hyp = Math.sqrt( (x-window.innerWidth/2) * (x-window.innerWidth/2) + (y-window.innerHeight/2) * (y-window.innerHeight/2) );
     var normalizedX = (x-window.innerWidth/2) / hyp;
     var normalizedY = (y-window.innerHeight/2) / hyp;
 
-    let theTanTwo = Math.atan2(normalizedY, normalizedX);
-
-    camera.position.set(Math.sin(theTanTwo)*80, Math.cos(theTanTwo)*80, Math.cos(theTanTwo)*80); ////////////
+    var theta = Math.atan2(normalizedY, normalizedX);
 
 
-    // camera.position.set(Math.sin(theTanTwo)*10, -Math.sin(theTanTwo)*10, Math.cos(theTanTwo)*10);
+    camera.position.set(Math.sin(theta)*80, Math.cos(theta)*80, Math.cos(theta)*80); ////////////
+
+
+
+
+
+    // camera.position.set(Math.cos(theta)*80, Math.cos(theta + Math.PI)*80, -Math.sin(theta)*80); ////////////
+    // camera.position.set(Math.cos(normalizedX)*80, -Math.sin(normalizedY)*80, -Math.sin(normalizedY)*80); ////////////
+
+    // camera.position.set(Math.tan(theta)*80, Math.cos(theta)*80, Math.cos(theta)*80); ////////////
+
+    // camera.position.set(Math.sin(theta)*80, Math.cos(theta)*80, -Math.cos(theta + Math.PI)*80); ////////////
+    // camera.position.set(Math.sin(theta)*80, Math.cos(theta)*80, -Math.cos(theta + Math.PI)*80); ////////////
+
+    // camera.position.set(Math.sin(theta)*80, Math.cos(theta + Math.PI)*80, 0); ////////////
+    // camera.position.set(Math.sin(theta)*80, Math.cos(theta + Math.PI)*80, Math.cos(theta)*80); ////////////
+
+    // camera.position.set(Math.sin(theta)*10, -Math.sin(theta)*10, Math.cos(theta)*10);
 
     // camera.position.set(Math.atan2(normalizedY, normalizedX)*30, Math.atan2(normalizedY, normalizedX)*30, 20);
     // camera.position.set(Math.sin(Math.atan2(normalizedY, normalizedX))*30, Math.cos(Math.atan2(normalizedY, normalizedX))*30, 20);
