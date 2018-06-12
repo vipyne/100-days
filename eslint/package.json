@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-vip100days",
+  "version": "1.0.0",
+  "description": "ESLint Config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipyne/"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "homepage": "http://vipyne.github.io/",
+  "dependencies": {
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0"
+  }
+}
