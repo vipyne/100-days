@@ -1,0 +1,18 @@
+{
+  "name": "derp",
+  "version": "1.0.0",
+  "description": "Code style guides",
+  "scripts": {
+    "preinstall": "npm run install:config",
+    "install:config": "cd eslint/eslint-config-vip100days && npm prune && npm install",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipyne/100-days.git"
+  },
+  "keywords": [
+    "style guide",
+  ],
+  "license": "MIT",
+  "homepage": "http://vipyne.github.io/"
+}
