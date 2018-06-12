@@ -4,7 +4,7 @@
   "description": "Code style guides",
   "scripts": {
     "preinstall": "npm run install:config",
-    "install:config": "cd eslint/eslint-config-vip100days && npm prune && npm install",
+    "install:config": "cd eslint && npm prune && npm install",
   },
   "repository": {
     "type": "git",
