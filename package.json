@@ -11,16 +11,13 @@
     "type": "git",
     "url": "https://github.com/vipyne/100-days.git"
   },
-  "keywords": [
-    "narf brain",
-   ],
   "author": "",
   "license": "Unlicense",
-  "bugs": {
-    "url": "http://vipyne.github.io/"
+  "peerDependencies": {
+    "eslint": ">= 4"
   },
   "homepage": "http://vipyne.github.io/",
   "dependencies": {
-  "eslint-plugin-import": "^2.12.0"
+    "eslint-plugin-import": "^2.12.0"
   }
 }
