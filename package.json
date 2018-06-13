@@ -1,9 +1,23 @@
 {
   "name": "derpy",
   "version": "1.0.0",
+  "description": "ESLint Config",
   "scripts": {	
     "preinstall": "echo narf && npm run install:config",
     "install:config": "cd eslint && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipyne/100-days.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "homepage": "http://vipyne.github.io/",
+  "dependencies": {
+    "eslint-plugin-import": "^2.12.0"
   }
 }
