@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/vipyne/100-days.git"
   },
+  "bugs": {
+    "url": "https://github.com/vipyne"
+  },
   "author": "",
   "license": "Unlicense",
   "homepage": "http://vipyne.github.io/"
