@@ -1,5 +1,5 @@
 {
-  "name": "brain",
+  "name": "eslint-config-vip100days",
   "version": "1.0.0",
   "description": "ESLint Config",
   "scripts": {	
