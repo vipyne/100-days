@@ -13,8 +13,5 @@
   },
   "author": "",
   "license": "Unlicense",
-  "peerDependencies": {
-    "eslint": ">= 4"
-  },
   "homepage": "http://vipyne.github.io/"
 }
