@@ -16,8 +16,5 @@
   "peerDependencies": {
     "eslint": ">= 4"
   },
-  "homepage": "http://vipyne.github.io/",
-  "dependencies": {
-    "eslint-plugin-import": "^2.12.0"
-  }
+  "homepage": "http://vipyne.github.io/"
 }
