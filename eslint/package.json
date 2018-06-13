@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-vip100days",
+  "name": "narf",
   "version": "1.0.0",
   "description": "ESLint Config",
   "main": "index.js",
