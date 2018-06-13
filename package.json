@@ -2,7 +2,6 @@
   "name": "derpy",
   "version": "1.0.0",
   "description": "ESLint Config",
-  "main": "index.js",
   "scripts": {	
     "preinstall": "echo narf && npm run install:config",
     "install:config": "cd eslint && npm install",
@@ -10,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vipyne/100-days"
+    "url": "https://github.com/vipyne/100-days.git"
   },
   "author": "",
   "license": "Unlicense",
