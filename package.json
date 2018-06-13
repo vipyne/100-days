@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "ESLint Config",
   "main": "index.js",
-  "scripts": {
-    "preinstall": "echo narf",
+  "scripts": {	
+    "preinstall": "echo narf && npm run install:config",
+    "install:config": "cd eslint && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
