@@ -1,18 +1,27 @@
 {
   "name": "eslint-config-vip100days",
   "version": "1.0.0",
-  "description": "Code style guides",
+  "description": "ESLint Config",
+  "main": "index.js",
   "scripts": {
-    "preinstall": "npm run install:config",
-    "install:config": "cd eslint && npm prune && npm install",
+    "preinstall": "echo narf",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vipyne/100-days.git"
+    "url": "https://github.com/vipyne/100-days"
   },
-  "keywords": [
-    "style guide",
-  ],
-  "license": "MIT",
-  "homepage": "http://vipyne.github.io/"
+  "author": "",
+  "license": "Unlicense",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "homepage": "http://vipyne.github.io/",
+  "dependencies": {
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0"
+  }
 }
