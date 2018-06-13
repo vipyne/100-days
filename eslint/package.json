@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ESLint Config",
   "main": "index.js",
-  "scripts":
+  "scripts": {
     "preinstall": "echo narfy narf narf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
