@@ -20,7 +20,7 @@
     "url": "http://vipyne.github.io/"
   },
   "homepage": "http://vipyne.github.io/",
-  "peerDependencies": {
-    "eslint": ">= 4"
+  "dependencies": {
+  "eslint-plugin-import": "^2.12.0"
   }
 }
