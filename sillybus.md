@@ -15,11 +15,11 @@ hardware
   - https://en.wikipedia.org/wiki/Barrel_shifter
   - https://en.wikipedia.org/wiki/Circular_shift
   - [CGA](http://www.seasip.info/VintagePC/cga.html#ccomp)
-  
+
 - memory
   - [memory faq](http://nommu.org/memory-faq.txt)
   - [what every programmer should know about memory](http://lwn.net/Articles/250967/)
-  
+
 - chips
   - [propeller](https://www.parallax.com/catalog/microcontrollers/propeller)
   - [andrew reitano](http://www.andrewreitano.com/2915643-tv-transmitter-business-card)
@@ -31,7 +31,7 @@ math
     - [vid on matrix math](https://ocw.mit.edu/ans7870/18/18.06/tools/Applets_sound/uropmovie.html)
     - http://mathworld.wolfram.com/Matrix.html
   - Convex Triangulation
-  - Non-convex Triangulation 
+  - Non-convex Triangulation
   - Matrices and Vectors
   - Curves
 - [inigo quilez](http://www.iquilezles.org/www/index.htm)
@@ -104,7 +104,7 @@ vr
 
 video
 ----
-  - FFMPEG -- 
+  - FFMPEG --
     - [video editor tutorial](https://github.com/mpenkov/ffmpeg-tutorial)
     - ffplay.c
   - [video streamer blog post](https://bengarney.com/2016/06/25/video-conference-part-1-these-things-suck/)
@@ -132,10 +132,10 @@ misc.
 http://ian-albert.com/old/custom_filters/
   - Blurs
   - Photoshop blend modes
-  
+
 lua!
   - [love](https://love2d.org/) -- 2d game engine
-  
+
 [nw.js](https://nwjs.io/)
 
 - misc.
@@ -179,7 +179,7 @@ machine learning
 - registers
 - fork() and exec() and threads and contexts and processes
 - read [unix network programming](https://www.amazon.com/gp/offer-listing/0139498761/ref=rdr_ext_uan)
-- [CUDA](https://developer.nvidia.com/cuda-zone) 
+- [CUDA](https://developer.nvidia.com/cuda-zone)
 - [OpenCL](https://software.intel.com/en-us/intel-opencl?cid=sem43700008885837829&intel_term=openCL&gclid=Cj0KEQjw4fy_BRCX7b6rq_WZgI0BEiQAl78nd04dFUvE1ODsrRKzDpCUoaloeojx0VDbY1IC0iimgikaAh7k8P8HAQ&gclsrc=aw.ds)
 
 - [imgui](https://github.com/ocornut/imgui)
@@ -190,7 +190,7 @@ machine learning
 - color spaces
   -[YCbCr](https://en.wikipedia.org/wiki/YCbCr)
   -[CIE 1931 color space](https://en.wikipedia.org/wiki/CIE_1931_color_space)
-  
+
   - [color math](http://www.colorcube.com/articles/math/math.htm)
   - [color vision](https://terpconnect.umd.edu/~toh/ColorLesson/)
   - [matrix math color](http://blog.press.princeton.edu/2015/09/14/nicholas-higham-on-mathematics-in-color/)
@@ -199,11 +199,11 @@ machine learning
   - [little dj](http://www.littlesounddj.com/lsd/)
   - [nanoloop](http://www.nanoloop.de/one/index.html)
   - [nullsleep](http://www.nullsleep.com/utilities.php)
-  
+
 - [bit-banging](https://en.wikipedia.org/wiki/Bit_banging)
 
 duh
 - elixir/phoenix
 - react native
 
-ps. the name of this file is intentionally wrong.  i am just silly :P
+ps. The name of this file is intentionally wrong.  I am just silly :P  (but I am not a bus)
