@@ -1,5 +1,5 @@
-# things i want to learn
-#### formally known as `things i want to learn at recurse center`
+# Things I want to learn (or just interesting things...)
+#### formally known as `things I want to learn at recurse center`
 
 hardware
 -----
@@ -35,17 +35,14 @@ math
   - Matrices and Vectors
   - Curves
 - [inigo quilez](http://www.iquilezles.org/www/index.htm)
+- [circle the square](http://www.quadibloc.com/math/circint.htm)
 
 /where i currently am in C land/
 - [learncpp](http://www.learncpp.com/cpp-tutorial/1-10b-how-to-design-your-first-programs/)
 - [stephen T. L. core video](https://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Core-C-/Stephan-T-Lavavej-Core-C-1-of-n)
 - [hey, a recurse post](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
-
 - [virtual memory / c](http://www.cprogramming.com/tutorial/virtual_memory_and_heaps.html)
-
 - [learn opengl](http://www.learnopengl.com/#!Getting-started/Hello-Window)
-
-- [disassmbly](http://www.expobrain.net/2013/06/16/disassembly-c-code-for-fun-part-1/)
 
 assembly
 ----
@@ -59,6 +56,8 @@ assembly
 - ["easy"](http://ian.seyler.me/easy_x86-64/)
 - [another assembly post](http://nickdesaulniers.github.io/blog/2014/04/18/lets-write-some-x86-64/)
 - [x86-64 Machine-Level Programming∗](https://www.cs.cmu.edu/~fp/courses/15213-s07/misc/asm64-handout.pdf)
+
+- [disassmbly](http://www.expobrain.net/2013/06/16/disassembly-c-code-for-fun-part-1/)
 
 - [life of a c program](https://docs.google.com/presentation/d/1IwSxhDd2jxIC_vKWHzEcZLrwnuPp_Jzo2SzGMAF0sok/edit#slide=id.g17993633fa_0_32)
 
@@ -86,7 +85,7 @@ C
 
 - [emscripten](https://github.com/kripken/emscripten) - javascript llvm compiler
 
-web
+web/GL
 ----
 - WebGL
   - [Radi](http://lacquer.fi/radidoc/Radi_and_WebGL) - realtime visual effects for Canvas and Video elements
@@ -96,6 +95,8 @@ web
   - [pixijs](http://www.pixijs.com/)
 - [adtile motionStack](https://motionstack.adtile.me/)
 - [mapbox gl](https://www.mapbox.com/mapbox-gl-js/api/)
+- [helpful reference](https://webglfundamentals.org/webgl/lessons/resources/webgl-state-diagram.html)
+- 
 
 vr
 ----
@@ -111,18 +112,18 @@ video
   - [atomicparsley](http://atomicparsley.sourceforge.net/) -- metadata
   - [datamoshing](http://datamoshing.com/)
   - [theora](https://www.theora.org/faq/)
+  - [VideoFrame: HTML5 Video SMPTE Time Code capturing and Frame Seeking API](http://allensarkisyan.github.io/VideoFrameDocs/)
+  
 
 misc.
 ----
 
+[color television maddness](http://www.quadibloc.com/science/freq01.htm)
 [cinder](https://libcinder.org/)
-
 [openframeworks](http://openframeworks.cc/)
-
+[open scene graph](http://www.openscenegraph.org/)
 [asciinema](https://asciinema.org/)
-
 [a targa thing](http://dmr.ath.cx/gfx/targa/)
-
 [VIPS](http://www.vips.ecs.soton.ac.uk/index.php?title=VIPS)
 
 - data pipelines
@@ -148,6 +149,11 @@ readings
 - https://codewords.recurse.com/issues/two/how-i-learned-to-stop-worrying-and-love-http
 - https://codewords.recurse.com/issues/six/image-processing-101
 - https://developers.500px.com/image-classification-with-hadoop-streaming-1aa18b81e22b#.ptzr8qfuu
+
+electrical engineering
+----
+- [MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/)
+- [kahn academy](https://www.khanacademy.org/science/electrical-engineering/introduction-to-ee)
 
 someday
 ----
@@ -194,6 +200,8 @@ machine learning
   - [color math](http://www.colorcube.com/articles/math/math.htm)
   - [color vision](https://terpconnect.umd.edu/~toh/ColorLesson/)
   - [matrix math color](http://blog.press.princeton.edu/2015/09/14/nicholas-higham-on-mathematics-in-color/)
+  
+ - [graphic rants](http://graphicrants.blogspot.com/)
 
 - Gameboy
   - [little dj](http://www.littlesounddj.com/lsd/)
@@ -202,11 +210,8 @@ machine learning
 
 - [bit-banging](https://en.wikipedia.org/wiki/Bit_banging)
 
-duh
+meh-be
 - elixir/phoenix
 - react native
 
 ps. The name of this file is intentionally wrong.  I am just silly :P  (but I am not a bus)
-
-another commit
-
