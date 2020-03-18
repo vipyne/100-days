@@ -29,7 +29,7 @@
     };
 
     //// you can't stop trying to make it happen
-    fetch('../other/gify.wasm').then(response =>
+    fetch('./gify.wasm').then(response =>
       response.arrayBuffer()
     ).then(bytes =>
       // WebAssembly.instantiate(bytes)
