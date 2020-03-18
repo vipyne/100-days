@@ -5,7 +5,7 @@
   var daysHTML = document.getElementById('js-days'),
       docFrag  = document.createDocumentFragment(),
       // update this number as sketches are showable... enough. ish.
-      numberOfDoneSketches = 13;
+      numberOfDoneSketches = 15;
 
 
   for (var row = 1; row <= 10; row++) {
