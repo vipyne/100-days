@@ -125,7 +125,7 @@
         instance.exports.free(strPointer);
       } else {
         let msgSize = instance.exports.getMessageSize(gifPointer, inputGif.byteLength);
-        let msgStart = inputGif.byteLength - msgSize - 2;
+        let msgStart = inputGif.byteLength - msgSize - 1;
 
         let fromDecodeGif = instance.exports.decodeGif(gifPointer, msgSize + 1, msgStart);
         let msg = mem.slice(fromDecodeGif, fromDecodeGif + msgSize + 2); // +2 for 'oops' padding
