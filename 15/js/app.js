@@ -1,5 +1,9 @@
 
 ;(function(){
+console.log('Thanks for snooping!')
+console.log('')
+console.log('You can check out the code at:')
+console.log('https://github.com/vipyne/100-days/tree/master/15')
 /////////////////////////////
   // TODO: something cool with wasm
   // https://dassur.ma/things/c-to-webassembly/ | https://dassur.ma/things/raw-wasm/
