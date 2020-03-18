@@ -4,7 +4,6 @@
   // TODO: something cool with wasm
   // https://dassur.ma/things/c-to-webassembly/ | https://dassur.ma/things/raw-wasm/
   async function runWASM(inputGif, encode) {
-    console.log("_____inputGif ", inputGif)
     // when "function import requires a callable", put func in `env` obj
     const config = {
       module: {},
@@ -76,9 +75,6 @@
                                  gifPointer,
                                  inputGif.byteLength);
       gArr.set(new Int8Array(gif));
-      console.log("_____gArr.byteOffset ", gArr.byteOffset)
-      console.log("_____gArr.length ", gArr.length)
-      console.log("_____gArr.byteLength ", gArr.byteLength)
 
       const mem = new Int8Array(instance.exports.memory.buffer);
       const memBase = 1024; // todo get this __global_base from emcc | instance.exports.__global_base.value;
@@ -116,7 +112,6 @@
         cArr.set(string);
 
         let fromGif = instance.exports.gif(gifPointer, inputGif.byteLength, strPointer, string.length);
-        console.log("__1___fromGif ", fromGif)
 
         const blob = new Blob([
           mem.slice(fromGif, fromGif + inputGif.byteLength + string.length + 3)
@@ -131,15 +126,12 @@
         instance.exports.free(strPointer);
       } else {
         let msgSize = instance.exports.getMessageSize(gifPointer, inputGif.byteLength);
-        console.log("_____msgSize ", msgSize)
         let msgStart = inputGif.byteLength - msgSize - 2;
-        console.log("_____msgStart ", msgStart)
 
         let fromDecodeGif = instance.exports.decodeGif(gifPointer, msgSize + 1, msgStart);
         let msg = mem.slice(fromDecodeGif, fromDecodeGif + msgSize + 2); // +2 for 'oops' padding
         let message = '';
         for (let i = 0; i < msg.length; i++) {
-          console.log("_____mmsg[i] ", String.fromCodePoint(msg[i]))
           try {
             message += String.fromCodePoint(msg[i]);
           } catch(e) {
