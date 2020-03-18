@@ -37,7 +37,7 @@ exit;
 #include <emscripten.h>
 
 EMSCRIPTEN_KEEPALIVE
-char * gif(char * gif, int gif_length, char * msg, int msgLength) { // char * secret_message
+char * gif(char * gif, int gif_length, char * msg, int msg_length) { // char * secret_message
 
 	// http://giflib.sourceforge.net/whatsinagif/bits_and_bytes.html
 	// static char gif_header[6] = {'G', 'I' ,'F' , '8', '9', 'a' };
@@ -49,7 +49,7 @@ char * gif(char * gif, int gif_length, char * msg, int msgLength) { // char * se
   // static char trailer[] = { 0x3B };
 
 	// total length == gif length + message length + 3 bytes for message header
-	char *output = (char*)malloc(sizeof(char) * (gif_length + 3 + msgLength));
+	char *output = (char*)malloc(sizeof(char) * (gif_length + 3 + msg_length));
 
 	for (int i = 0; i < gif_length - 1; i++) {
 		output[i] = gif[i];
@@ -59,31 +59,25 @@ char * gif(char * gif, int gif_length, char * msg, int msgLength) { // char * se
 	static char sec_msg[2] = {0x21, 0xFE};
 	output[gif_length - 1] = sec_msg[0];
 	output[gif_length]     = sec_msg[1];
-	output[gif_length + 1] = (char)msgLength;
+	output[gif_length + 1] = (char)msg_length;
 
-	for (int i = gif_length + 2; i < gif_length + 3 + msgLength; i++) {
+	for (int i = gif_length + 2; i < gif_length + 3 + msg_length; i++) {
 		output[i] = msg[i - (gif_length + 2)];
 	}
 
 	// trailer
-	output[gif_length + 3 + msgLength - 1] = 0x3B;
+	output[gif_length + 3 + msg_length - 1] = 0x3B;
 
   return output;
 }
 
 EMSCRIPTEN_KEEPALIVE
-char getMessageSize(char * gif, int gif_length) { // char * secret_message
+char getMessageSize(char * gif, int gif_length) {
 	static char msg_header[2] = {0x21, 0xFE};
-	unsigned char first = '\x21';
-	unsigned char another = 0x21;
-	char msg_size = 2;
+	char msg_size = 15; // random default
 	for (int i = 0; i < gif_length; i++) {
 		if ( gif[i] == (char)0x21) {
-				// msg_size = 0x05;
-				msg_size = (unsigned int)gif[i+2];
 			if ( gif[i+1] == (char)0xFE) {
-				// msg_size = (int)gif[i+2];
-				// msg_size = 0x07;
 				msg_size = (unsigned int)gif[i+2];
 			}
 		}

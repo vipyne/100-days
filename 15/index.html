@@ -2,8 +2,6 @@
 <html>
 <head>
   <title>gify</title>
-  <link rel="stylesheet" type="text/css" href="./app.css">
-
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -12,29 +10,30 @@
     <h2>Encode</h2>
     <ul>
     	<li>
-    		<h3>Step 1: Write a secret message to hide in the gif</h3>
+    		<h3>Step 1: Write a secret message to hide in a gif</h3>
         <form id="your-name">
           <input autofocus id="input-name" type="text" style="width:500px" placeholder=" write secret message here ">
         </form>
       </li>
       <li>
-    		<h3>Step 2: Upload a .gif smaller than 3mb</h3>
+    		<h3>Step 2: Upload a gif</h3>
+    		<p>filesize limit: 3 mb</p>
     		<input type="file" id="input-gif">
       </li>
       <li>
-    		<h3>Step 3: Download .gif</h3>
+    		<h3>Step 3: Download gif with secret message</h3>
         <button id="click">Download gif with secret message</button>
       </li>
       <li>
     		<h3>Step 4: Explanation</h3>
-        <p>The downloaded .gif will look exactly the same, but if you open it in a hex editor (or better yet, try <a href="https://github.com/vipyne/giffy">this program</a>) to decode the message.</p>
+        <p>The downloaded .gif will look exactly the same, but now it holds your secret message.</p>
       </li>
     </ul>
 
     <h2>Decode</h2>
     <ul>
     	<li>
-    		<h3>Step 1: Upload an encoded .gif smaller than 3mb</h3>
+    		<h3>Step 1: Upload an encoded .gif</h3>
     		<input type="file" id="decode-gif">
       </li>
       <li>
@@ -42,10 +41,12 @@
         <button id="click">See secret message</button>
       </li>
       <li>
-    		<h3>Secret Message Decoded:</h3>
+    		<h3>Step 3: Secret Message Decoded:</h3>
         <p id="decoded"></p>
       </li>
     </ul>
+     <p>ProTip: <a href="https://github.com/vipyne/giffy">This program</a> encodes/decodes gifs from the command line.</p>
+     <p>Made by @vipyne with WASM & the collective effort of the internet.</p>
   </div>
   <script src="./js/app.js"></script>
 

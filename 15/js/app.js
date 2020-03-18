@@ -125,7 +125,7 @@
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'binary-' + Date.now() + '.gif';
+        a.download = gifFilename + '-gify-' + Date.now() + '.gif';
         document.body.appendChild(a);
         a.click();
         instance.exports.free(strPointer);
@@ -139,9 +139,12 @@
         let msg = mem.slice(fromDecodeGif, fromDecodeGif + msgSize + 2); // +2 for 'oops' padding
         let message = '';
         for (let i = 0; i < msg.length; i++) {
-          // console.log("_____mmsg[i] ", msg[i])
           console.log("_____mmsg[i] ", String.fromCodePoint(msg[i]))
-          message += String.fromCodePoint(msg[i]);
+          try {
+            message += String.fromCodePoint(msg[i]);
+          } catch(e) {
+            message += ';'
+          }
         }
         decoded.innerText = message;
       }
@@ -179,9 +182,12 @@
   const name = document.getElementById('name');
   let interval = 0;
   let secretMessage = '';
+  let gifFilename = '';
 
   inputGifSelector.addEventListener('change', (event) => {
     const inputGif = event.target.files[0];
+    gifFilename = inputGif.name.slice(0, -4);
+    secretMessage = inputName.value;
     if ('image/gif' !== inputGif.type ||
       3000000 < inputGif.size) {
       return alert('Please upload a .gif smaller than 3mb');
@@ -206,22 +212,7 @@
     event.preventDefault();
     event.stopPropagation();
     secretMessage = inputName.value;
-    // button.click();
   })
-
-  form.addEventListener('change', (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    secretMessage = inputName.value;
-    // button.click();
-  })
-
-  button.addEventListener('click', (event) => {
-    // getMediaStream();
-    // interval = setInterval(function() {
-    //   videoToCanvas(video, canvas);
-    // },100);
-  });
 
   form.focus();
 
