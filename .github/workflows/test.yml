@@ -1,0 +1,15 @@
+name: Test
+on: [push]
+
+jobs:
+  build:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: hello world
+        uses: ./.github/actions/hello_world
+          who-to-say-hi: 'Ada Lovelace'
+        id: 'hellooo'
+      - name: echo time
+        run: echo 'time was ${{ steps.hellooo.output.time }}.'
