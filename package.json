@@ -4,15 +4,19 @@
   "description": "Code style guides",
   "scripts": {
     "preinstall": "npm run install:config",
-    "install:config": "cd eslint && npm prune && npm install",
+    "install:config": "cd eslint && npm prune && npm install"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/vipyne/100-days.git"
   },
   "keywords": [
-    "style guide",
+    "style guide"
   ],
   "license": "MIT",
-  "homepage": "http://vipyne.github.io/"
+  "homepage": "http://vipyne.github.io/",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
 }
