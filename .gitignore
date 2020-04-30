@@ -1,2 +1,3 @@
 .DS_Store
 ./11/rainbow/ignore/*
+node_modules
