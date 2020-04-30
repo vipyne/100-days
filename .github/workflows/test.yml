@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: hello world
-        uses: vipyne/100-days/.github/actions/hello_world
+        uses: vipyne/100-days/.github/actions/hello_world@vp-actions
         id: 'hellooo'
       - name: echo time
         run: echo 'time was ${{ steps.hellooo.output.time }}.'
