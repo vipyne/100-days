@@ -1,8 +1,0 @@
-name: 'hello world'
-description: 'gh action test hello world'
-outputs:
-  time:
-    description: 'time of hello'
-runs:
-  using: 'node10'
-  main: 'test.js'
