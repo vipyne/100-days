@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello world
-        uses: ./.github/actions/hello_world
+        uses: .github/actions/hello_world
         id: 'hellooo'
       - name: echo time
         run: echo 'time was ${{ steps.hellooo.output.time }}.'
