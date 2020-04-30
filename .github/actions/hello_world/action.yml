@@ -4,5 +4,5 @@ outputs:
   time:
     description: 'time of hello'
 runs:
-  using: 'node10'
+  using: 'node12'
   main: 'test.js'
