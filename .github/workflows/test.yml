@@ -6,9 +6,9 @@ jobs:
     name: Testing
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: hello world
-        uses: vipyne/100-days/.github/actions/hello_world@vp-actions
+        uses: ./.github/actions/hello_world
         id: 'hellooo'
       - name: echo time
         run: echo 'time was ${{ steps.hellooo.output.time }}.'
