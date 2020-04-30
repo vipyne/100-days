@@ -5,4 +5,9 @@ outputs:
     description: 'time of hello'
 runs:
   using: 'node12'
-  main: 'test.js'
+  steps:
+    - uses: actions/checkout@v2
+    - name: testing
+      run: |
+        npm install
+        node test.js
