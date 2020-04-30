@@ -10,7 +10,7 @@ jobs:
       - name: install things
         run: npm install
       - name: hello world
-        uses: vipyne/100-days/.github/actions/hello_world@master
+        run: node ./.github/actions/hello_world/test.js
         id: 'hellooo'
       - name: echo time
         run: echo 'time was ${{ steps.hellooo.output.time }}.'

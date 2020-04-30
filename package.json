@@ -1,18 +1,11 @@
 {
   "name": "eslint-config-vip100days",
   "version": "1.0.0",
-  "description": "Code style guides",
-  "scripts": {
-    "preinstall": "npm run install:config",
-    "install:config": "cd eslint && npm prune && npm install"
-  },
+  "description": "Cool actions",
   "repository": {
     "type": "git",
     "url": "https://github.com/vipyne/100-days.git"
   },
-  "keywords": [
-    "style guide"
-  ],
   "license": "MIT",
   "homepage": "http://vipyne.github.io/",
   "dependencies": {
