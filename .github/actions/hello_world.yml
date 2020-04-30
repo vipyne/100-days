@@ -1,10 +1,5 @@
 name: 'hello world'
 description: 'gh action test hello world'
-inputs:
-  who-to-say-hi:
-    description: 'type name here'
-    required: true
-    default: 'world'
 outputs:
   time:
     description: 'time of hello'
