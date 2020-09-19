@@ -6,9 +6,15 @@ jobs:
     name: Testing
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: hello world
-        run: node ./.github/actions/hello_world/test.js
-        id: 'hellooo'
-      - name: echo time
-        run: echo 'time was ${{ steps.hellooo.output.time }}.'
+        uses: actions/checkout@v2
+        run: |
+          echo 'hellooo world'
+
+      - name: Checkout dailyco-metrics
+        uses: actions/checkout@v2
+        with:
+          repository: vipyne/dailyco-metrics
+          token: ${{ secrets.KHK_MANUAL_TESTS_VIPYNE_PAT }}
+          ref: main
+          path: dailyco-metrics
