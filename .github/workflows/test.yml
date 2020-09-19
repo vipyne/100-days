@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: hello world
         uses: actions/checkout@v2
-        run: |
-          echo 'hellooo world'
 
       - name: Checkout dailyco-metrics
         uses: actions/checkout@v2
