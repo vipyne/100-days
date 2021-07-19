@@ -17,11 +17,17 @@ jobs:
         with:
           token: ${{ secrets.ONE_HUNDRED_DAYS_REMOTE_TEST }}
 
+      - name: Install git-filter-repo
+        run: brew install git-filter-repo
+
       - name: configure git
         run: |
           git config user.name robot
           git config user.email robot@vipyne.co
           git remote add mirror https://github.com/vipyne/remote-test.git
+
+      - name: Filter repo to include only daily-js/
+        run: git filter-repo --path .github/workflows --invert-paths
 
       - name: push to 'mirror' (remote-test)
         env:
