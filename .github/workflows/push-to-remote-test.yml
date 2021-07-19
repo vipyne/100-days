@@ -26,4 +26,4 @@ jobs:
       - name: push to 'mirror' (remote-test)
         env:
           REFSPEC: ${{ github.ref }}
-        run: git push mirror flat-history
+        run: git push mirror flat-history --force-with-lease
