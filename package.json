@@ -2,6 +2,7 @@
   "name": "eslint-config-vip100days",
   "version": "1.0.0",
   "description": "Cool actions",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/vipyne/100-days.git"
