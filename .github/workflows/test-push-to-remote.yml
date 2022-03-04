@@ -1,4 +1,4 @@
-name: push-to-remote-test
+name: push-to-remote
 
 on:
   push:
