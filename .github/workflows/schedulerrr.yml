@@ -1,0 +1,41 @@
+name: schedulerrr
+
+on:
+  schedule:
+  - cron: '10 * * * *'
+
+  workflow_dispatch:
+    inputs:
+      test-input:
+        description: 'testing'
+        default: 'asdf'
+        required: false
+
+env:
+  TEST_ENV_VAR: ${{ github.event.inputs.test-input }}
+  TEST_ENV_VAR_1: ${{ github.event.inputs.test-input || 'asdf'}}
+  TEST_ENV_VAR_2: ${{ github.event.inputs.test-input }} || 'asdf'
+  TEST_ENV_VAR_3: ${{ github.event.inputs.test-input || github.event.inputs.test-input.default }}
+
+jobs:
+  build:
+    name: Testing cron inputs
+    runs-on: ubuntu-latest
+    steps:
+      - name: cron hello world
+        run: |
+          echo "github.event.inputs.test-input_____"
+          echo "${{ github.event.inputs.test-input }}"
+          echo "^^^^^^^^^^^"
+          echo "TEST_ENV_VAR____"
+          echo "$TEST_ENV_VAR"
+          echo "^^^^^^^^^^^.."
+          echo "TEST_ENV_VAR-1____"
+          echo "$TEST_ENV_VAR_1"
+          echo "^^^^^^^^^^^- - -"
+          echo "TEST_ENV_VAR-2____"
+          echo "$TEST_ENV_VAR_2"
+          echo "^^^^^^^^^^^&"
+          echo "TEST_ENV_VAR-3____"
+          echo "$TEST_ENV_VAR_3"
+          echo "^^^^^^^^^^^"
