@@ -12,10 +12,10 @@ on:
         required: false
 
 env:
-  TEST_ENV_VAR: ${{ github.event.inputs.test-input }}
-  TEST_ENV_VAR_1: ${{ github.event.inputs.test-input || 'asdf'}}
-  TEST_ENV_VAR_2: ${{ github.event.inputs.test-input }} || 'asdf'
-  TEST_ENV_VAR_3: ${{ github.event.inputs.test-input || github.event.inputs.test-input.default }}
+  TEST_ENV_VAR: ${{ toJSON(github.event.inputs.test-input) }}
+  TEST_ENV_VAR_1: ${{ !toJSON(github.event.inputs.test-input) }}
+  TEST_ENV_VAR_2: ${{ !toJSON(github.event.inputs.test-input) || contains(github.event.inputs.test-input, 1) }}
+  TEST_ENV_VAR_3: ${{ !contains(github.event.inputs.test-input, *) || contains(github.event.inputs.test-input, 1) }}
 
 jobs:
   build:
