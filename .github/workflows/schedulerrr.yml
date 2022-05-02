@@ -2,7 +2,7 @@ name: schedulerrr
 
 on:
   schedule:
-  - cron: '10 * * * *'
+  - cron: '50 * * * *'
 
   workflow_dispatch:
     inputs:
@@ -13,9 +13,10 @@ on:
 
 env:
   TEST_ENV_VAR: ${{ toJSON(github.event.inputs.test-input) }}
-  TEST_ENV_VAR_1: ${{ toJSON(github.event.inputs.test-input) == null }}
-  TEST_ENV_VAR_2: ${{ !toJSON(github.event.inputs.test-input) }}
-  TEST_ENV_VAR_3: ${{ (toJSON(github.event.inputs.test-input) == null) || contains(github.event.inputs.test-input, 1) }}
+  TEST_ENV_VAR_1: ${{ contains(github.event.inputs.test-input, null) }}
+  TEST_ENV_VAR_2: ${{ toJSON(github.event.inputs.test-input) == 'null' }}
+  TEST_ENV_VAR_3: ${{ (toJSON(github.event.inputs.test-input) == 0) }}
+  # TEST_ENV_VAR_3: ${{ (toJSON(github.event.inputs.test-input) == null) || contains(github.event.inputs.test-input, 1) }}
 
 jobs:
   build:
@@ -47,7 +48,7 @@ jobs:
 # toJSON(github.event.inputs.test-input)          null
 # ^^^^^^^^^^^..
 # TEST_ENV_VAR-1____
-# false
+# ${{ toJSON(github.event.inputs.test-input) == null }}     false
 # ^^^^^^^^^^^- - -
 # TEST_ENV_VAR-2____
 # ${{ !toJSON(github.event.inputs.test-input) }}   false
