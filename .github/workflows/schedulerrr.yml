@@ -2,7 +2,7 @@ name: schedulerrr
 
 on:
   schedule:
-  - cron: '20 * * * *'
+  - cron: '15 * * * *'
 
   workflow_dispatch:
     inputs:
@@ -13,7 +13,7 @@ on:
 
 env:
   TEST_ENV_VAR: ${{ !toJSON(github.event.inputs.test-input) }}
-  TEST_ENV_VAR_1: ${{ !toJSON(github.event.inputs.test-input != null }}
+  TEST_ENV_VAR_1: ${{ github.event.inputs.test-input != null }}
   TEST_ENV_VAR_2: ${{ github.event.inputs.test-input == null }}
   TEST_ENV_VAR_3: ${{ github.event.inputs.test-input == '' }}
   # TEST_ENV_VAR_3: ${{ (toJSON(github.event.inputs.test-input) == null) || contains(github.event.inputs.test-input, 1) }}
@@ -27,16 +27,16 @@ jobs:
         run: |
           echo "github.event.inputs.test-input_____"
           echo "${{ github.event.inputs.test-input }}"
-          echo "^^^^^   ^^^^^^"
+          echo "^^^^^                ^^^^^^"
           echo "TEST_ENV_VAR____"
           echo "$TEST_ENV_VAR"
-          echo "^^^^^   ^^^^^^.."
+          echo "^^^^^             ^^^^^^.."
           echo "TEST_ENV_VAR-1____"
           echo "$TEST_ENV_VAR_1"
-          echo "^^^^^   ^^^^^^- - -"
+          echo "^^^^^          ^^^^^^- - -"
           echo "TEST_ENV_VAR-2____"
           echo "$TEST_ENV_VAR_2"
-          echo "^^^^^^   ^^^^^&"
+          echo "^^^^^^     ^^^^^&"
           echo "TEST_ENV_VAR-3____"
           echo "$TEST_ENV_VAR_3"
           echo "^^^^^   ^^^^^^"
