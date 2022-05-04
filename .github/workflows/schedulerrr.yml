@@ -1,47 +1,47 @@
-name: schedulerrr
+# name: schedulerrr
 
-on:
-  schedule:
-  - cron: '50 * * * *'
+# on:
+#   schedule:
+#   - cron: '50 * * * *'
 
-  workflow_dispatch:
-    inputs:
-      test-input:
-        description: 'testing'
-        default: 'asdf'
-        required: true
+#   workflow_dispatch:
+#     inputs:
+#       test-input:
+#         description: 'testing'
+#         default: 'asdf'
+#         required: true
 
-env:
-  TEST_ENV_VAR: ${{ !toJSON(github.event.inputs.test-input) }}
-  TEST_ENV_VAR_1: ${{ github.event.inputs.test-input == '' }}
-  TEST_ENV_VAR_2: ${{ github.event.inputs.test-input == null }}
-  TEST_ENV_VAR_3: ${{ (github.event.inputs.test-input == null) || contains(github.event.inputs.test-input, 1) }}
+# env:
+#   TEST_ENV_VAR: ${{ !toJSON(github.event.inputs.test-input) }}
+#   TEST_ENV_VAR_1: ${{ github.event.inputs.test-input == '' }}
+#   TEST_ENV_VAR_2: ${{ github.event.inputs.test-input == null }}
+#   TEST_ENV_VAR_3: ${{ (github.event.inputs.test-input == null) || contains(github.event.inputs.test-input, 1) }}
 
-jobs:
-  build:
-    name: Testing cron inputs
-    runs-on: ubuntu-latest
-    steps:
-      - name: cron hello world
-        run: |
-          echo "github.event.inputs.test-input_____"
-          echo "${{ github.event.inputs.test-input }}"
-          echo "^^^^^   &&&&&&&&    ^^^^^^"
-          echo "TEST_ENV_VAR____"
-          echo "$TEST_ENV_VAR"
-          echo "^^^^^             ^^^^^^.."
-          echo "TEST_ENV_VAR-1____"
-          echo "$TEST_ENV_VAR_1"
-          echo "^^^^^          ^^^^^^- - -"
-          echo "TEST_ENV_VAR-2____"
-          echo "$TEST_ENV_VAR_2"
-          echo "^^^^^^     ^^^^^&"
-          echo "TEST_ENV_VAR-3____"
-          echo "$TEST_ENV_VAR_3"
-          echo "^^^^^   ^^^^^^"
+# jobs:
+#   build:
+#     name: Testing cron inputs
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: cron hello world
+#         run: |
+#           echo "github.event.inputs.test-input_____"
+#           echo "${{ github.event.inputs.test-input }}"
+#           echo "^^^^^   &&&&&&&&    ^^^^^^"
+#           echo "TEST_ENV_VAR____"
+#           echo "$TEST_ENV_VAR"
+#           echo "^^^^^             ^^^^^^.."
+#           echo "TEST_ENV_VAR-1____"
+#           echo "$TEST_ENV_VAR_1"
+#           echo "^^^^^          ^^^^^^- - -"
+#           echo "TEST_ENV_VAR-2____"
+#           echo "$TEST_ENV_VAR_2"
+#           echo "^^^^^^     ^^^^^&"
+#           echo "TEST_ENV_VAR-3____"
+#           echo "$TEST_ENV_VAR_3"
+#           echo "^^^^^   ^^^^^^"
 
 
-# github.event.inputs.test-input_____
+# # github.event.inputs.test-input_____
 
 # ^^^^^   &&&&&&&&    ^^^^^^
 # TEST_ENV_VAR____
@@ -56,52 +56,3 @@ jobs:
 # TEST_ENV_VAR-3____
 # true
 # ^^^^^   ^^^^^^
-
-
-
-
-# ^^^^^                ^^^^^^
-# TEST_ENV_VAR____
-# false
-# ^^^^^             ^^^^^^..
-# TEST_ENV_VAR-1____
-# false
-# ^^^^^          ^^^^^^- - -
-# TEST_ENV_VAR-2____
-# true
-# ^^^^^^     ^^^^^&
-# TEST_ENV_VAR-3____
-# true
-# ^^^^^   ^^^^^^
-
-
-
-# ^^^^^ ^^^^^^
-# TEST_ENV_VAR____
-# false    !toJSON(github.event.inputs.test-input)
-# ^^^^^ ^^^^^^..
-# TEST_ENV_VAR-1____
-# false
-# ^^^^^ ^^^^^^- - -
-# TEST_ENV_VAR-2____
-# true     !toJSON(github.event.inputs.test-input != null
-# ^^^^^^ ^^^^^& 
-# TEST_ENV_VAR-3____
-# false   !(toJSON(github.event.inputs.test-input))
-# ^^^^^ ^^^^^^
-
-
-
-# ^^^^^^^^^^^
-# TEST_ENV_VAR____
-# toJSON(github.event.inputs.test-input)          null
-# ^^^^^^^^^^^..
-# TEST_ENV_VAR-1____
-# ${{ toJSON(github.event.inputs.test-input) == null }}     false
-# ^^^^^^^^^^^- - -
-# TEST_ENV_VAR-2____
-# ${{ !toJSON(github.event.inputs.test-input) }}   false
-# ^^^^^^^^^^^&
-# TEST_ENV_VAR-3____
-# false
-# ^^^^^^^^^^^

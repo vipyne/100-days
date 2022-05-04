@@ -1,35 +1,35 @@
-name: push-to-remote
+# name: push-to-remote
 
-on:
-  push:
-    branches:
-      - 'flat-history'
-  create:
+# on:
+#   push:
+#     branches:
+#       - 'flat-history'
+#   create:
 
-jobs:
-  synthetic-network-main-branch-mirror:
-    name: push main branch of private-synthetic-network to the (public) synthetic-network
-    runs-on: ubuntu-latest
+# jobs:
+#   synthetic-network-main-branch-mirror:
+#     name: push main branch of private-synthetic-network to the (public) synthetic-network
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.ONE_HUNDRED_DAYS_REMOTE_TEST }}
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v2
+#         with:
+#           token: ${{ secrets.ONE_HUNDRED_DAYS_REMOTE_TEST }}
 
-      - name: Install git-filter-repo
-        run: brew install git-filter-repo
+#       - name: Install git-filter-repo
+#         run: brew install git-filter-repo
 
-      - name: configure git
-        run: |
-          git config user.name robot
-          git config user.email robot@vipyne.co
-          git remote add mirror https://github.com/vipyne/remote-test.git
+#       - name: configure git
+#         run: |
+#           git config user.name robot
+#           git config user.email robot@vipyne.co
+#           git remote add mirror https://github.com/vipyne/remote-test.git
 
-      - name: Filter repo to include only daily-js/
-        run: git filter-repo --path .github/workflows --invert-paths
+#       - name: Filter repo to include only daily-js/
+#         run: git filter-repo --path .github/workflows --invert-paths
 
-      - name: push to 'mirror' (remote-test)
-        env:
-          REFSPEC: ${{ github.ref }}
-        run: git push -f mirror HEAD:${REFSPEC}
+#       - name: push to 'mirror' (remote-test)
+#         env:
+#           REFSPEC: ${{ github.ref }}
+#         run: git push -f mirror HEAD:${REFSPEC}
