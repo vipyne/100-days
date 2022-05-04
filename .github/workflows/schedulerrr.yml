@@ -41,6 +41,24 @@ jobs:
           echo "^^^^^   ^^^^^^"
 
 
+# github.event.inputs.test-input_____
+
+# ^^^^^   &&&&&&&&    ^^^^^^
+# TEST_ENV_VAR____
+# false
+# ^^^^^             ^^^^^^..
+# TEST_ENV_VAR-1____
+# true
+# ^^^^^          ^^^^^^- - -
+# TEST_ENV_VAR-2____
+# true
+# ^^^^^^     ^^^^^&
+# TEST_ENV_VAR-3____
+# true
+# ^^^^^   ^^^^^^
+
+
+
 
 # ^^^^^                ^^^^^^
 # TEST_ENV_VAR____
