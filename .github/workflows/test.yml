@@ -1,14 +1,17 @@
-# name: Test
-# on: [push]
+name: Test
 
-# jobs:
-#   build:
-#     name: Testing
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: hello world
-#         run: node ./.github/actions/hello_world/test.js
-#         id: 'hellooo'
-#       - name: echo time
-#         run: echo 'time was ${{ steps.hellooo.output.time }}.'
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo just a test 25
+      #   run: node ./.github/actions/hello_world/test.js
+      #   id: 'hellooo'
+      # - name: echo time
+      #   run: echo 'time was ${{ steps.hellooo.output.time }}.'
