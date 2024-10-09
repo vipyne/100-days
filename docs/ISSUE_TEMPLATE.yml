@@ -1,0 +1,58 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["vipyne/100-days"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      value: "A bug happened!"
+    validations:
+      required: false
+  - type: textarea
+    id: what-should
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      value: "A bug happened!"
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce the Problem
+      description: Steps to Reproduce the Problem
+      value: "steps 1. 2. 3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Specifics
+      description: Specifics
+      value: "- Open Sesame / RTVI / Pipecat versions:
+- Platform/s:
+- Services:."
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](./CONTRIBUTING.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
