@@ -10,7 +10,7 @@
   "license": "MIT",
   "homepage": "http://vipyne.github.io/",
   "dependencies": {
-    "@actions/core": "^1.2.3",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^2.1.1"
   }
 }
